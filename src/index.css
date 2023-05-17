@@ -1,0 +1,155 @@
+:root {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #0f0f0f;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.header-bar {
+	display: flex;	
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	font-size: 5vh;
+	height: 25vh;
+}
+
+.header-bar *:hover {
+	border-bottom: 1vh solid red;
+}
+
+h1 {
+	text-align: center;
+}
+
+.member-profile {
+	background-color: red;
+	max-width: 40%;;
+	text-align: center;
+
+}
+
+.member-profile * {
+	margin: 10%;
+}
+
+.member-profile img {
+	max-width: 85%;;
+
+}
+
+.member-display {
+	background-color: aliceblue;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 10%;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.centered {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#page-title * {
+	font-size: 10vh;
+
+}
+
+#page-title:nth-child(1) {
+	font-size: 50%;
+}
+
+.theta-tau-title  {
+	display: flex;
+	flex-direction: row;
+	font-size: 40%;
+
+}
+
+.theta-tau-title:nth-child(1) {
+	color: darkred;
+}
+
+.theta-tau-title:nth-child(2) {
+	color: gold;
+}
+
+
+
+.icon img {
+	max-width: 30%;
+}
+
+.gallery {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	background-color: white;
+	justify-content: space-around ;
+	max-width: 95%;
+
+}
+
+.gallery * {
+	max-width: 4vw;
+}
+
+.App {
+	margin: 1%;
+}
+
+
+.fade-in-bottom {
+	animation: fadeInBottom 1s ease-in-out;
+}
+
+@keyframes fadeInBottom {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.chapter-letters {
+	font-family: 'Times New Roman';
+}
+
+.hor-flex {
+	display: flex;
+	flex-direction: row;
+}
+
+.ver-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#carousel-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 85vh;
+}
