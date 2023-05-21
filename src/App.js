@@ -1,30 +1,71 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import logo from "./logo.svg";
-import thetatau from "./theta-tau.png";
-import MemberProfile from "./MemberProfile.js";
-import MainCarousel from "./MainCarousel";
-import Orientation from "./Orientation";
-import Contact from "./Contact";
+import React, { useState } from "react";
 import AppHeader from "./AppHeader";
+import MainPage from "./MainPage";
+import AppPagesEnum from "./AppPagesEnum.ts";
 
 // import "./App.css";
-//
 
 class App extends React.Component {
-  render() {
-    var memberProf = new MemberProfile();
-    return (
-      <div className="App">
-        <AppHeader />
+  state = {
+    currentPage: AppPagesEnum.Home,
+  };
 
-        <MainCarousel />
+  constuctor() {
+    this.setState({
+      currentPage: AppPagesEnum.Home,
+    });
 
-        <Orientation />
-        <Contact />
-      </div>
-    );
+    this.setPage = this.setPage.bind(this);
   }
+
+  setPage = (page) => {
+    console.log(
+      "setPage called with name " +
+        AppPagesEnum[page] +
+        " and type " +
+        typeof page
+    );
+    console.log(String(page));
+    this.setState({ currentPage: page });
+  };
+
+  appHeader = (<AppHeader setPage={this.setPage} />);
+  render() {
+    console.log("render called");
+    // print currentPage
+    console.log(this.state.currentPage);
+
+    if (this.state.currentPage === AppPagesEnum.Home) {
+      return (
+        <div className="App">
+          {" "}
+          {this.appHeader} <MainPage />
+        </div>
+      );
+    } else if (this.state.currentPage === AppPagesEnum.About) {
+      return (
+        <div className="App">
+          {this.appHeader}
+          <p>About</p>
+        </div>
+      );
+    } else {
+      return (
+        <div className="App">
+          {this.appHeader}
+          <p>Default</p>
+        </div>
+      );
+    }
+  }
+
+  renderHomePage() {}
+
+  renderHistoryPage() {}
+
+  renderMembersPage() {}
+
+  renderGalleryPage() {}
 }
 
 export default App;
