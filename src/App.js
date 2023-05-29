@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import AppHeader from "./AppHeader";
 import MainPage from "./MainPage";
 import AppPagesEnum from "./AppPagesEnum.ts";
+import Member from "./member";
+import member_list from "./member_list";
+import Gallery from "./Gallery";
 
 // import "./App.css";
 
@@ -36,36 +39,60 @@ class App extends React.Component {
     console.log(this.state.currentPage);
 
     if (this.state.currentPage === AppPagesEnum.Home) {
-      return (
-        <div className="App">
-          {" "}
-          {this.appHeader} <MainPage />
-        </div>
-      );
-    } else if (this.state.currentPage === AppPagesEnum.About) {
-      return (
-        <div className="App">
-          {this.appHeader}
-          <p>About</p>
-        </div>
-      );
+      var ret = this.renderHomePage();
+    } else if (this.state.currentPage === AppPagesEnum.History) {
+      ret = this.renderHistoryPage();
+    } else if (this.state.currentPage === AppPagesEnum.Members) {
+      ret = this.renderMembersPage();
+    } else if (this.state.currentPage === AppPagesEnum.Gallery) {
+      ret = this.renderGalleryPage();
     } else {
-      return (
-        <div className="App">
-          {this.appHeader}
-          <p>Default</p>
-        </div>
-      );
+      ret = this.renderHomePage();
     }
+    return ret;
   }
 
-  renderHomePage() {}
+  renderHomePage() {
+    return (
+      <div className="App">
+        {this.appHeader}
+        <MainPage />
+      </div>
+    );
+  }
 
-  renderHistoryPage() {}
+  renderHistoryPage() {
+    return (
+      <div className="App">
+        {this.appHeader}
+        <MainPage />
+      </div>
+    );
+  }
 
-  renderMembersPage() {}
+  renderMembersPage() {
+    var retHTML = [];
+    for (const [key, value] of Object.entries(member_list.members)) {
+      console.log(key);
+      console.log(value);
+      retHTML.push(<Member member={value} />);
+    }
+    return (
+      <div className="App">
+        {this.appHeader}
+        <div className="member-display">{retHTML}</div>
+      </div>
+    );
+  }
 
-  renderGalleryPage() {}
+  renderGalleryPage() {
+    return (
+      <div className="App">
+        {this.appHeader}
+        <Gallery />
+      </div>
+    );
+  }
 }
 
 export default App;
