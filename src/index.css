@@ -260,3 +260,27 @@ h1 {
 	z-index: 9;
 
 }
+
+.footer {
+	background-color: #AAAAAA;
+	height: 10vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	font-size: 5vh;
+	height: 15vh;
+}
+
+.footer img {
+	max-height: 5vh;
+}
+
+.footer * {
+	color: white;
+}
+
+.footer .theta-tau-logo {
+	max-height: 10vh;
+	filter : invert(100%);
+}

@@ -6,6 +6,7 @@ import Member from "./member";
 import member_list from "./member_list";
 import Gallery from "./Gallery";
 import FamilyTree from "./family_tree";
+import Footer from "./Footer";
 
 // import "./App.css";
 
@@ -57,6 +58,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <MainPage header={this.appHeader} />
+        <Footer />
       </div>
     );
   }
@@ -66,6 +68,7 @@ class App extends React.Component {
       <div className="App">
         {this.appHeader}
         <MainPage />
+        <Footer />
       </div>
     );
   }
@@ -80,6 +83,7 @@ class App extends React.Component {
         {this.appHeader}
         <div className="member-display">{retHTML}</div>
         <FamilyTree />
+        <Footer />
       </div>
     );
   }
@@ -89,6 +93,7 @@ class App extends React.Component {
       <div className="App">
         {this.appHeader}
         <Gallery />
+        <Footer />
       </div>
     );
   }
