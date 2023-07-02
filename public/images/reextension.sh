@@ -8,12 +8,13 @@ do
 	echo "Extension is "
 	extension="${i##*.}"
 	echo $extension
+	# if png exists already
 	if [ $extension == "jpeg" ] 
 	then
-		ffmpeg -i $i $wojpgpngjpeg.png
+		ffmpeg -n -i $i $wojpgpngjpeg.png
 	elif [ $extension == "jpg" ]
 	then
-		ffmpeg -i $i $wojpgpngjpeg.png
+		ffmpeg -n -i $i $wojpgpngjpeg.png
 	fi
 
 

@@ -1,7 +1,32 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import brotherhood from "./homepage_imgs/everyone_rocket_uspcaled.jpg";
+import professionalism from "./homepage_imgs/everyone_professional_peter.jpg";
+import volunteering from "./homepage_imgs/everyone_cleanup_peter_adli_landon.png";
 
 class MainCarousel extends React.Component {
+  CarouselContent = {
+    0: {
+      image: volunteering,
+      slogan: "Volunteering",
+    },
+    1: {
+      image: professionalism,
+      slogan: "Professionalism",
+    },
+    2: {
+      image: brotherhood,
+      slogan: "Brotherhood",
+    },
+  };
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      current_showing: 0,
+    };
+  }
+
   getGears = () => {
     var styles = [
       "gear-svg gear-bottom gear-left",
@@ -33,8 +58,32 @@ class MainCarousel extends React.Component {
 
   render() {
     var gears = this.getGears();
+    // set a timer for 3 seconds to change properties of carousel-container
+    // # volunteering picture is everyone_cleaning_adli, etc...
+
+    setTimeout(() => {
+      console.log("this.state.current_showing is ");
+      console.log(this.state.current_showing);
+      console.log(this.CarouselContent[this.state.current_showing]);
+      console.log(this.CarouselContent[this.state.current_showing].image);
+      // this.setState({
+      // current_showing: (this.state.current_showing + 1) % 3,
+      // });
+      var next_showing = (this.state.current_showing + 1) % 3;
+
+      var carouselContainer = document.getElementById("carousel-container");
+      carouselContainer.style.backgroundImage = `url(${this.CarouselContent[next_showing].image})`;
+    }, 3000);
+
     return (
-      <div id="carousel-container">
+      <div
+        id="carousel-container"
+        style={{
+          backgroundImage: `url(${
+            this.CarouselContent[this.state.current_showing].image
+          })`,
+        }}
+      >
         <div id="page-title" className="centered fade-in-bottom">
           <div className="theta-tau-title">
             <div className="theta-title"> Θ </div>
@@ -45,6 +94,7 @@ class MainCarousel extends React.Component {
             <div className="chapter-letters">ΨΕ </div>
             Chapter
           </div>
+          <div>{this.CarouselContent[this.state.current_showing].slogan}</div>
 
           <div className="centered icon"></div>
         </div>
