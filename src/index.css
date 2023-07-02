@@ -19,12 +19,15 @@ code {
 
 
 .header-bar {
+	background-color: white;
+	z-index: 9;
 	display: flex;	
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
 	font-size: 5vh;
 	height: 15vh;
+
 }
 
 .header-bar *:hover {
@@ -87,7 +90,6 @@ h1 {
 .theta-tau-title  {
 	display: flex;
 	flex-direction: row;
-
 }
 
 .theta-tau-title:nth-child(1) {
@@ -97,8 +99,6 @@ h1 {
 .theta-tau-title:nth-child(2) {
 	color: gold;
 }
-
-
 
 .icon img {
 	max-width: 30%;
@@ -166,17 +166,34 @@ h1 {
 }
 
 .gear-svg {
-	position: relative;
-z-index: 5;
-width: -10vw;
-left: -49vw;
-opacity: .5;
-top: 49%;
-animation: spin 4s linear infinite;
+  position: absolute;
+  width: 22vw;
+  opacity: 0.5;
+  animation: spin 230s linear infinite;
+  transform-origin: 50% 50%;
+    margin: -12vw;
+  transform: translate(-50%, -50%);
+}
+
+.gear-bottom {
+  bottom: 0%;
+}
+
+.gear-left {
+  left: 0%;
+}
+
+.gear-right {
+  right: 0%;
+}
+
+.gear-top {
+  top: 0%;
 }
 
 #carousel-container {
-	z-index: 1;
+	position: relative;
+	overflow: hidden;
 	overflow-y: hidden;
 	padding: 0px;
 	display: flex;

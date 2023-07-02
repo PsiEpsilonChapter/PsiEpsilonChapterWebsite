@@ -56,8 +56,7 @@ class App extends React.Component {
   renderHomePage() {
     return (
       <div className="App">
-        {this.appHeader}
-        <MainPage />
+        <MainPage header={this.appHeader} />
       </div>
     );
   }

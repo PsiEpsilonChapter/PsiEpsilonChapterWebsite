@@ -7,7 +7,7 @@ class AppHeader extends React.Component {
     console.log(AppPagesEnum);
 
     return (
-      <header className="App-header">
+      <div className="App-header">
         <div className="header-bar">
           <div onClick={() => this.props.setPage(AppPagesEnum.Home)}>Home</div>
 
@@ -27,7 +27,7 @@ class AppHeader extends React.Component {
             Gallery{" "}
           </div>
         </div>
-      </header>
+      </div>
     );
   }
 }
