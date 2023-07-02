@@ -36,9 +36,10 @@ h1 {
 }
 
 .member-profile {
-	background-color: red;
+	
 	max-width: 40vw;
 	text-align: center;
+	box-shadow: 0 0 10px 10px rgba(0,0,0,.2);
 
 }
 
@@ -55,7 +56,12 @@ h1 {
 	background-color: aliceblue;
 	display: grid;
 	padding: 10%;
-	  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+}
+
+.member-display * {
+	margin-right: 10%;
+	margin-bottom: 10%;
 }
 
 .italic {
@@ -167,6 +173,7 @@ h1 {
 }
 
 #carousel-container {
+	z-index: 1;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -179,8 +186,23 @@ h1 {
 }
 
 
+.member-major {
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	font-size: 2vh;
+}
+
+.member-major img {
+	width: 20%;
+
+}
+
+
 .member-name {
-	font-size: 5vh;
+	font-size: 4.5vh;
 
 }
 
@@ -193,4 +215,27 @@ h1 {
 
 .gallery-list * {
 	max-width: 100%;
+}
+
+
+.gear-svg {
+	position: relative;
+	max-width: 9vw;
+	right: 45%;
+	top: 90%;
+	opacity: .5;
+	animation: spin 4s linear infinite;
+}
+
+
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.orientation {
+	height: max-content;
+	z-index: 9;
 }

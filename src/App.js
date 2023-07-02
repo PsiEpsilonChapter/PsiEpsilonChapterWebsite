@@ -5,6 +5,7 @@ import AppPagesEnum from "./AppPagesEnum.ts";
 import Member from "./member";
 import member_list from "./member_list";
 import Gallery from "./Gallery";
+import FamilyTree from "./family_tree";
 
 // import "./App.css";
 
@@ -73,14 +74,13 @@ class App extends React.Component {
   renderMembersPage() {
     var retHTML = [];
     for (const [key, value] of Object.entries(member_list.members)) {
-      console.log(key);
-      console.log(value);
       retHTML.push(<Member member={value} />);
     }
     return (
       <div className="App">
         {this.appHeader}
         <div className="member-display">{retHTML}</div>
+        <FamilyTree />
       </div>
     );
   }

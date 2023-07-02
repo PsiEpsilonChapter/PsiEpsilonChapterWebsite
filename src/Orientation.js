@@ -6,7 +6,7 @@ import thetatau2 from "./thetatau2.jpg";
 class Orientation extends React.Component {
   render() {
     return (
-      <div>
+      <div className="orientation">
         <h1>Mission</h1>
         <div>
           The purpose of Theta Tau is to develop and maintain a high standard of

@@ -421,7 +421,7 @@ const member_list = {
     astringer: {
       img_src: "/images/astringer.png",
       name: "Ashton Stringer",
-      major: "Mechanial Engineering",
+      major: "Mechanical Engineering",
       number: 48,
       class: "2025",
       origin: "",
