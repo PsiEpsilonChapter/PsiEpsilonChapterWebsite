@@ -1,76 +1,44 @@
+import { PhotoProvider, PhotoView } from "react-photo-view";
+import "react-photo-view/dist/react-photo-view.css";
+import { RViewer, RViewerTrigger } from "react-viewerjs";
 import React from "react";
-import Viewer from "viewerjs";
-
-var listOfImages = [];
 
 class Gallery extends React.Component {
   constructor(props) {
     super(props);
-    this.galleryRef = React.createRef();
+    this.listOfImages = [];
   }
 
-  componentDidMount() {
-    this.initializeViewer();
-  }
+  componentDidMount() {}
 
-  componentDidUpdate() {
-    if (this.viewer) {
-      this.viewer.destroy();
-    }
-    this.initializeViewer();
-  }
+  componentDidUpdate() {}
 
-  componentWillUnmount() {
-    if (this.viewer) {
-      this.viewer.destroy();
-    }
-  }
-
-  initializeViewer() {
-    this.viewer = new Viewer(this.galleryRef.current, {
-      url: "data-original",
-      toolbar: {
-        oneToOne: true,
-        prev: function () {
-          this.viewer.prev(true);
-        },
-        play: true,
-        next: function () {
-          this.viewer.next(true);
-        },
-      },
-      viewed: () => {
-        this.viewer.update();
-      },
-      shown: () => {
-        this.viewer.zoomTo(1);
-      },
-    });
-  }
+  componentWillUnmount() {}
 
   importAll(r) {
     return r.keys().map(r);
   }
 
   componentWillMount() {
-    listOfImages = this.importAll(
+    this.listOfImages = this.importAll(
       require.context("../public/images/", false, /\.(png)$/)
     );
   }
 
   render() {
+    let thumbImageUrls = this.listOfImages;
+    console.log(`thumbImageUrls: ${thumbImageUrls}`);
+    console.log(`listOfImages: ${this.listOfImages}`);
     return (
-      <div>
-        <div id="gallery" className="gallery-list" ref={this.galleryRef}>
-          <ul id="images">
-            {listOfImages.map((image, index) => (
-              <li key={"li" + index}>
-                <img key={"img" + index} src={image} alt="info" />
-              </li>
-            ))}
-          </ul>
+      <PhotoProvider>
+        <div className="gallery-list">
+          {this.listOfImages.map((item, index) => (
+            <PhotoView key={index} src={item}>
+              <img src={item} alt="" />
+            </PhotoView>
+          ))}
         </div>
-      </div>
+      </PhotoProvider>
     );
   }
 }

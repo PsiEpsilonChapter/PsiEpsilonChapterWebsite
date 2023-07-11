@@ -236,10 +236,14 @@ h1 {
 	display: grid;
 	padding: 10%;
 	  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
 }
 
 .gallery-list * {
-	max-width: 100%;
+	width: 30vw;
+	height: 30vw;
+	margin-right: 10%;
+	object-fit: cover;
 }
 
 
@@ -263,13 +267,19 @@ h1 {
 
 .footer {
 	background-color: #AAAAAA;
-	height: 10vh;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-around;
-	font-size: 5vh;
-	height: 15vh;
+/* justify-content: space-around; */
+	font-size: 2vh;
+	height: auto;
+}
+.footer * {
+	margin-right: 5%;
+}
+
+.footer::nth-child(1) {
+	margin-left: 5%;
 }
 
 .footer img {
@@ -278,9 +288,22 @@ h1 {
 
 .footer * {
 	color: white;
+	
 }
 
 .footer .theta-tau-logo {
 	max-height: 10vh;
 	filter : invert(100%);
+}
+
+.social-icons {
+	display: flex;
+	flex-direction: row;
+	align-items: right;
+	justify-content: left;
+}
+
+.social-icons img {
+	margin-right: 5%;
+	width: 8%;
 }
