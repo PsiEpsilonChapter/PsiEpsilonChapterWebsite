@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { useState } from "react";
 import * as d3 from "d3";
+import Tree from "./tree.js";
 
 function FamilyTree(data) {
   const [count, setCount] = useState(0);

@@ -1,39 +1,34 @@
+import React from "react";
+import member_list from "./member_list";
+import Member from "./member";
+import Footer from "./Footer";
 
-        <h1>Member</h1>
-	      
-        <div className="member-display">
-          <div className="member-profile">
-            <img src="https://i.musicaimg.com/letras/resmax/ian-leon.jpg"></img>
-            <h2>Ian Leon</h2>
-            <div className="">Class of 2023</div>
-            <div className="">Pledged: Spring 2021</div>
-            <div className="">Aerospace Engineering</div>
-            <div className="italic">"Goth girls will break your heart..."</div>
-          </div>
-          <div className="member-profile">
-            <img src="https://i.musicaimg.com/letras/resmax/ian-leon.jpg"></img>
-            <h2>Ian Leon</h2>
-            <div className="">Class of 2023</div>
-            <div className="">Pledged: Spring 2021</div>
-            <div className="">Aerospace Engineering</div>
-            <div className="italic">"Goth girls will break your heart..."</div>
-          </div>
-          <div className="member-profile">
-            <img src="https://i.musicaimg.com/letras/resmax/ian-leon.jpg"></img>
-            <h2>Ian Leon</h2>
-            <div className="">Class of 2023</div>
-            <div className="">Pledged: Spring 2021</div>
-            <div className="">Aerospace Engineering</div>
-            <div className="italic">"Goth girls will break your heart..."</div>
-          </div>
-        </div>
-        <h1>History</h1>
-        We were established in 2018 in part due to one of our founders, Peter
-        Tarsoly. On the date of
-        <a>(Don't) Learn React</a>
-        <h1>Gallery</h1>
-        <div className="gallery">
-          <img src={thetatau1} />
-          <img src={thetatau1} />
-          <img src={thetatau1} />
-        </div>
+class Members extends React.Component {
+
+  importAll(r) {
+    return r.keys().map(r);
+  }
+	  componentWillMount() {
+	    this.listOfImages = this.importAll(
+	      require.context("../public/images/member_images/", false, /\.(png)$/)
+	    );
+	  }
+
+	render() {
+	    var retHTML = [];
+		console.log(this.listOfImages);
+	    for (const [key, value] of Object.entries(member_list.members)) {
+		    console.log("value is ");
+		    console.log(value);
+		    console.log(value.img_src);
+	      retHTML.push(<Member member={value} />);
+	    }
+	    return (
+		<div className="member-display">{retHTML}</div>
+	    );
+
+	}
+
+}
+
+export default Members;

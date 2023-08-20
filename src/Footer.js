@@ -13,22 +13,36 @@ class Footer extends React.Component {
         <div>
           <div>
             <div>
-              <b>Contact:</b>
-              <a> psiepsilonchapter@gmail.com </a>
+              <div className="big">Contact</div>
+              <p> psiepsilonchapter@gmail.com </p>
             </div>
             <div>
-              <b>Address:</b>
-              <a> 1010 W. Green St. Urbana, IL 61801 </a>
+              <div className="big">Address</div>
+              <p> 1010 W. Green St. Urbana, IL 61801 </p>
+            </div>
+            <div>
+              <div className="big">Socials</div>
+              <div className="social-icons">
+                <img
+                  src={instagram_logo}
+                  onClick={() => {
+                    // direct to instagram page
+                    window.open(
+                      "https://www.instagram.com/thetataufloridatech/"
+                    );
+                  }}
+                />
+                <img
+                  src={facebook_logo}
+                  onClick={() => {
+                    window.open("https://www.facebook.com/FloridaTechThetaTau");
+                  }}
+                />
+                <img src={discord_logo} />
+              </div>
             </div>
           </div>
-          <b>Socials</b>
-          <div className="social-icons">
-            <img src={instagram_logo} />
-            <img src={facebook_logo} />
-            <img src={discord_logo} />
-          </div>
         </div>
-        <div className="footer-text"></div>
       </div>
     );
   }

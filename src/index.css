@@ -2,6 +2,7 @@
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	color: #0f0f0f;
 	padding: 0px;
+	::--red-color: red;
 }
 body {
   margin: 0;
@@ -43,6 +44,7 @@ h1 {
 	max-width: 40vw;
 	text-align: center;
 	box-shadow: 0 0 10px 10px rgba(0,0,0,.2);
+	border-radius: 1vw;
 
 }
 
@@ -52,6 +54,7 @@ h1 {
 
 .member-profile img {
 	max-width: 85%;;
+	border-radius: 1vw;
 
 }
 
@@ -59,7 +62,7 @@ h1 {
 	background-color: aliceblue;
 	display: grid;
 	padding: 10%;
-	  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+	  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
 }
 
 .member-display * {
@@ -265,16 +268,25 @@ h1 {
 
 }
 
+.orientation div {
+	padding: 3vh;
+
+}
+
 .footer {
-	background-color: #AAAAAA;
+	padding: 1.5%;
+	height: 15vh;
+	background-color: #EFEFEF;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	justify-content: center;
 /* justify-content: space-around; */
 	font-size: 2vh;
 	height: auto;
 }
 .footer * {
+	font-size: 3vh;
 	margin-right: 5%;
 }
 
@@ -283,7 +295,7 @@ h1 {
 }
 
 .footer img {
-	max-height: 5vh;
+max-width: 10vw;
 }
 
 .footer * {
@@ -292,11 +304,11 @@ h1 {
 }
 
 .footer .theta-tau-logo {
-	max-height: 10vh;
-	filter : invert(100%);
+	max-height: 100%;
 }
 
 .social-icons {
+	margin-top: 2vh;
 	display: flex;
 	flex-direction: row;
 	align-items: right;
@@ -306,4 +318,47 @@ h1 {
 .social-icons img {
 	margin-right: 5%;
 	width: 8%;
+}
+
+.social-icons img:hover {
+	cursor: pointer;
+	filter: brightness(50%);
+}
+
+.footer .big {
+	font-size: 4vh;
+	font-weight: bold;
+}
+
+
+.red-background {
+	background-color: red;
+}
+
+
+.joining-headers {
+	font-weight: bold;
+	font-size: 7vh;
+	margin: none;
+	padding: none;
+	text-align: left;
+
+}
+
+.right-aligned-vert {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	align-content: right;
+	align-items: right;
+	justify-items: right;
+}
+
+.right-aligned-vert * {
+	max-width: 100%;
+}
+
+.HistorySummary {
+	padding: 10vh;
+
 }

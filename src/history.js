@@ -2,11 +2,11 @@ import React from "react";
 class History extends React.Component {
 
 	render() {
-		<div>
-
+		return (
+		<div className="HistorySummary">
 			<p>
 		In January 2017, a group of students at Florida Tech recognized the absence of a close-knit campus community for engineering students. They desired an organization that would foster personal and professional growth while accommodating both genders. Discovering the values of Theta Tau, a national co-ed engineering fraternity, they decided to establish a local fraternity called Zeta Theta Tau. With 10 core members, they organized social and professional development events during their first semester.
-				<p>
+				</p>
 
 					<p>
 			During the following semester, the fraternity expanded its membership and engaged in service and social activities. They collaborated with other campus organizations, volunteered for Engineers' Week, and conducted a beach cleanup. Social events such as game and movie nights, beach days, and a trip to Disney strengthened the bond among members. Simultaneously, they submitted a petition to become a colony of Theta Tau.
@@ -27,7 +27,11 @@ Throughout the Spring 2021 semester, the colony thrived by hosting virtual movie
 					<p>
 			Looking forward, the chapter-elect anticipates their official installation as Psi Epsilon chapter and played a role in persuading the university to recognize them as a professional fraternity. With the COVID-19 situation improving, the fraternity envisions becoming a close campus community where engineering students can live, learn, and grow together.
 					</p>
+
 			</div>
 
+		);
 	}
 }
+
+					export default History;

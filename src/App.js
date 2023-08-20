@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import AppHeader from "./AppHeader";
 import MainPage from "./MainPage";
 import AppPagesEnum from "./AppPagesEnum.ts";
-import Member from "./member";
-import member_list from "./member_list";
 import Gallery from "./Gallery";
 import FamilyTree from "./family_tree";
 import Footer from "./Footer";
+import Tree from "./tree.js";
+import Members from "./members.js"
+import History from "./history.js"
 
 // import "./App.css";
 
@@ -67,25 +68,20 @@ class App extends React.Component {
     return (
       <div className="App">
         {this.appHeader}
-        <MainPage />
+        <History />
         <Footer />
       </div>
     );
   }
 
   renderMembersPage() {
-    var retHTML = [];
-    for (const [key, value] of Object.entries(member_list.members)) {
-      retHTML.push(<Member member={value} />);
-    }
-    return (
+	  return (
       <div className="App">
         {this.appHeader}
-        <div className="member-display">{retHTML}</div>
-        <FamilyTree />
-        <Footer />
+        <Members />
       </div>
-    );
+	  );
+
   }
 
   renderGalleryPage() {
