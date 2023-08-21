@@ -24,22 +24,33 @@ class Member extends React.Component {
       major_icon = civil_engineering_icon;
     } else if (this.props.member.major === "Chemical Engineering") {
       major_icon = chemical_engineering_icon;
-    } else if (this.props.member.major === "Bioengineering") {
+    } else if (this.props.member.major === "Biomedical Engineering") {
       major_icon = bioengineering_icon;
     } else if (this.props.member.major === "Aerospace Engineering") {
       major_icon = aerospace_engineering_icon;
     }
 
+	  var class_str = String(this.props.member.class);
+	  class_str = class_str.substr(2);
+	  if(class_str != undefined && class_str != "") {
+	      var class_div = <div className="">Class of '{class_str}</div>;
+
+	  }
+	  var img_src = this.props.member.img_src;
+	  if(img_src == undefined) {
+
+	  }
+
     return (
       <div className="member-profile">
-        <img alt="member profile" src={this.props.member.img_src}></img>
+        <img alt="member profile" src={img_src}></img>
         <div>{this.props.member_name}</div>
         <div className="member-name">{this.props.member.name}</div>
-        <div className="">{this.props.member.pledge_date}</div>
         <div className="member-major">
           {this.props.member.major}
           <img src={major_icon} />
         </div>
+	      {class_div}
         <div>{this.props.member.hometown}</div>
         <div className="italic">{this.props.member.catchphrase}</div>
       </div>

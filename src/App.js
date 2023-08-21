@@ -49,6 +49,8 @@ class App extends React.Component {
       ret = this.renderMembersPage();
     } else if (this.state.currentPage === AppPagesEnum.Gallery) {
       ret = this.renderGalleryPage();
+    } else if (this.state.currentPage === AppPagesEnum.Silly) {
+      ret = this.renderSillySection();
     } else {
       ret = this.renderHomePage();
     }
@@ -93,6 +95,22 @@ class App extends React.Component {
       </div>
     );
   }
+
+	renderSillySection() {
+		return(
+      <div className="App">
+        {this.appHeader}
+	      <div className="ver-flex">
+
+			<h1>🤡Under Construction🤡</h1>
+	      <h3> Come back later? </h3>
+	      <img src="https://i.pinimg.com/originals/d9/1f/97/d91f97ff683eb493ed92f2350cb64579.png" />
+	      </div>
+        <Footer />
+      </div>
+		);
+
+	}
 }
 
 export default App;

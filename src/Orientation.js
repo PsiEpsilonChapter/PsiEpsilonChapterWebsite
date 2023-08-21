@@ -16,7 +16,7 @@ class Orientation extends React.Component {
         <div id="WhatIsThetaTau" className="what-is-theta-tau hor-flex">
           <div>
             {"TODO: Change this"}
-            <img alt="Changeme" src={thetatau2} width="50%" />
+            <img alt="Changeme" src={thetatau2} width="25%" />
           </div>
           <div>
             <h1>What is Theta Tau?</h1>
@@ -30,7 +30,7 @@ class Orientation extends React.Component {
             <div className="right-aligned-vert" >
 		    <div className="joining-headers">Recruitment</div>
 
-		    <p>Attend events during our rush week, starting on the ___ of August, 2023. During the next two weeks, there will be opportunities to interact with our members and get to know what life with the fraternity is like. After that, if you are still interested in joining, voting will commence within the fraternity and you will likely be offered a bid.</p>
+		    <p>Attend events during our two main recruiting week, starting on the <b>28th of August, 2023</b>. During the next two weeks, there will be opportunities to interact with our members and get to know what life with the fraternity is like. After that, if you are still interested in joining, voting will commence within the fraternity and you will likely be offered a bid.</p>
 
 		    <div className="joining-headers">Orientation</div>
 

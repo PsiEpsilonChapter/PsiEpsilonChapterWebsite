@@ -28,6 +28,9 @@ Throughout the Spring 2021 semester, the colony thrived by hosting virtual movie
 			Looking forward, the chapter-elect anticipates their official installation as Psi Epsilon chapter and played a role in persuading the university to recognize them as a professional fraternity. With the COVID-19 situation improving, the fraternity envisions becoming a close campus community where engineering students can live, learn, and grow together.
 					</p>
 
+			<div>
+			</div>
+
 			</div>
 
 		);

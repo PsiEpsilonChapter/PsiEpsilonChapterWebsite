@@ -38,7 +38,7 @@ class Footer extends React.Component {
                     window.open("https://www.facebook.com/FloridaTechThetaTau");
                   }}
                 />
-                <img src={discord_logo} />
+                <img id="discord_logo" src={discord_logo} />
               </div>
             </div>
           </div>
