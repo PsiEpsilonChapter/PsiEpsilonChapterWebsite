@@ -32,7 +32,11 @@ class App extends React.Component {
         typeof page
     );
     console.log(String(page));
-    this.setState({ currentPage: page });
+	  var previousPage = this.state.currentPage;
+	  if(previousPage == AppPagesEnum.Home) {
+
+	  }
+	  this.setState({ currentPage: page , previousPage : previousPage});
   };
 
   appHeader = (<AppHeader setPage={this.setPage} />);

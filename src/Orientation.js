@@ -46,7 +46,6 @@ class Orientation extends React.Component {
             </div>
           </div>
           <div>
-            {"TODO: Change atl"}
             <img src={thetatau1} width="50%" alt="" />
           </div>
         </div>

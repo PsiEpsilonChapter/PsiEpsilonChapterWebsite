@@ -2,7 +2,7 @@
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	color: #0f0f0f;
 	padding: 0px;
-	--red-color: red;
+	--red-color: white;
 	--animation-time: 50s;
 }
 body {
@@ -374,7 +374,7 @@ max-width: 10vw;
 
 
 .red-background {
-	background-color: red;
+	background-color: white;
 }
 
 

@@ -6,6 +6,7 @@ import home_icon from "./icons/home.png"
 import mission_icon from "./icons/mission.png"
 import members_icon from "./icons/members.png"
 import silly_icon from "./icons/silly.png"
+import PsiEps from "./PsiEps.png"
 // import members_icon from "./icons/members.png"
 
 
@@ -15,6 +16,12 @@ class AppHeader extends React.Component {
     console.log(AppPagesEnum);
 
     return (
+	    <div>
+
+	    <head>
+		    <link rel="icon" href={PsiEps}/>
+		    <title> Psi Epsilon Chapter </title>
+	    </head>
       <div className="App-header">
         <div className="header-bar">
           <div onClick={() => this.props.setPage(AppPagesEnum.Home)}>
@@ -49,6 +56,8 @@ class AppHeader extends React.Component {
           </div>
         </div>
       </div>
+	    </div>
+		    
     );
   }
 }

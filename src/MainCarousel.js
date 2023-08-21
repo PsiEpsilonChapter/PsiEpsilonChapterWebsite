@@ -78,7 +78,7 @@ break;
     var gears = this.getGears();
 
     // set a timer for 3 seconds to change properties of carousel-container
-    setTimeout(() => {
+    this.timeout = setTimeout(() => {
 
       console.log(" this.current_showing is ");
       console.log(this.current_showing);
