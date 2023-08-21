@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PsiEpsilonChapterWebsite/static/css/main.56f5c35d.css",
-    "main.js": "/PsiEpsilonChapterWebsite/static/js/main.c8e22d21.js",
+    "main.css": "/PsiEpsilonChapterWebsite/static/css/main.9f39db34.css",
+    "main.js": "/PsiEpsilonChapterWebsite/static/js/main.a1bfa341.js",
     "static/js/787.a3982a60.chunk.js": "/PsiEpsilonChapterWebsite/static/js/787.a3982a60.chunk.js",
     "static/media/everyone_cleanup_peter_adli_landon3.png": "/PsiEpsilonChapterWebsite/static/media/everyone_cleanup_peter_adli_landon3.2ec2b92817db153ef822.png",
     "static/media/everyone_cleanup_peter_adli_landon.png": "/PsiEpsilonChapterWebsite/static/media/everyone_cleanup_peter_adli_landon.2c947bdebd330de8a6ce.png",
@@ -87,7 +87,6 @@
     "static/media/everyone_sunset_rocket_launch.png": "/PsiEpsilonChapterWebsite/static/media/everyone_sunset_rocket_launch.8d5c79d355a36de1b083.png",
     "static/media/anoori.png": "/PsiEpsilonChapterWebsite/static/media/anoori.055fb129f503a3323b1f.png",
     "static/media/mtapaszto.png": "/PsiEpsilonChapterWebsite/static/media/mtapaszto.d4ec1e8acab256570e9f.png",
-    "static/media/aerospace-engineering.png": "/PsiEpsilonChapterWebsite/static/media/aerospace-engineering.640853e03c3255292487.png",
     "static/media/mhoadley.png": "/PsiEpsilonChapterWebsite/static/media/mhoadley.794c2276013c1d0a84b9.png",
     "static/media/everyone_rocket_uspcaled.jpg": "/PsiEpsilonChapterWebsite/static/media/everyone_rocket_uspcaled.d78d426ffbe813996b5f.jpg",
     "static/media/lblackwell.png": "/PsiEpsilonChapterWebsite/static/media/lblackwell.96941eb6496ce882b1f1.png",
@@ -103,6 +102,7 @@
     "static/media/sedwards.png": "/PsiEpsilonChapterWebsite/static/media/sedwards.55476eafa9c8b18388d4.png",
     "static/media/ileon.png": "/PsiEpsilonChapterWebsite/static/media/ileon.2b9742afa09037f23585.png",
     "static/media/vshirley.png": "/PsiEpsilonChapterWebsite/static/media/vshirley.2cf33e69133b4de6e718.png",
+    "static/media/history.png": "/PsiEpsilonChapterWebsite/static/media/history.b11c9dd0c4cb8f49e33c.png",
     "static/media/everyone_professional_peter.jpg": "/PsiEpsilonChapterWebsite/static/media/everyone_professional_peter.8b0cf8c85d481ff1023f.jpg",
     "static/media/instagram-logo.png": "/PsiEpsilonChapterWebsite/static/media/instagram-logo.ed5ed57e98d053cf1e55.png",
     "static/media/mechanical-engineering.png": "/PsiEpsilonChapterWebsite/static/media/mechanical-engineering.da7e4f3c5cee17ff3af7.png",
@@ -111,19 +111,24 @@
     "static/media/tpaige.png": "/PsiEpsilonChapterWebsite/static/media/tpaige.9bfd46e5aa13670e2518.png",
     "static/media/jjohnson.png": "/PsiEpsilonChapterWebsite/static/media/jjohnson.d770f9eb34b5e7b5289e.png",
     "static/media/facebook-logo.png": "/PsiEpsilonChapterWebsite/static/media/facebook-logo.2417945f605a0b6420cd.png",
+    "static/media/aerospace-engineering.png": "/PsiEpsilonChapterWebsite/static/media/aerospace-engineering.915f9fb479efb74761cb.png",
     "static/media/biomedical-engineering.png": "/PsiEpsilonChapterWebsite/static/media/biomedical-engineering.198bde97374af628099e.png",
     "static/media/discord-logo.png": "/PsiEpsilonChapterWebsite/static/media/discord-logo.2f26b12210749d45d35c.png",
     "static/media/dnieves.png": "/PsiEpsilonChapterWebsite/static/media/dnieves.c8345db666e075a3792a.png",
     "static/media/computer-engineering.png": "/PsiEpsilonChapterWebsite/static/media/computer-engineering.507b0d27564abf70e243.png",
-    "static/media/computer-science.png": "/PsiEpsilonChapterWebsite/static/media/computer-science.e2003067c1fb38600422.png",
+    "static/media/gallery.png": "/PsiEpsilonChapterWebsite/static/media/gallery.fd3a136a75a0313f69b4.png",
+    "static/media/silly.png": "/PsiEpsilonChapterWebsite/static/media/silly.d2d7d45151df5a9f5442.png",
+    "static/media/mission.png": "/PsiEpsilonChapterWebsite/static/media/mission.2901470a4c0212d2671b.png",
+    "static/media/computer-science.png": "/PsiEpsilonChapterWebsite/static/media/computer-science.1e0b2bbe328367cf452f.png",
+    "static/media/members.png": "/PsiEpsilonChapterWebsite/static/media/members.e5cb3c5eb890b0f37932.png",
     "static/media/civil-engineering.png": "/PsiEpsilonChapterWebsite/static/media/civil-engineering.cdcba98ab6871d739cf6.png",
     "index.html": "/PsiEpsilonChapterWebsite/index.html",
-    "main.56f5c35d.css.map": "/PsiEpsilonChapterWebsite/static/css/main.56f5c35d.css.map",
-    "main.c8e22d21.js.map": "/PsiEpsilonChapterWebsite/static/js/main.c8e22d21.js.map",
+    "main.9f39db34.css.map": "/PsiEpsilonChapterWebsite/static/css/main.9f39db34.css.map",
+    "main.a1bfa341.js.map": "/PsiEpsilonChapterWebsite/static/js/main.a1bfa341.js.map",
     "787.a3982a60.chunk.js.map": "/PsiEpsilonChapterWebsite/static/js/787.a3982a60.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.56f5c35d.css",
-    "static/js/main.c8e22d21.js"
+    "static/css/main.9f39db34.css",
+    "static/js/main.a1bfa341.js"
   ]
 }
