@@ -409,6 +409,16 @@ max-width: 10vw;
 	text-shadow: 0 0 25px white;
 }
 
+.under-construction {
+	background-color: yellow;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.under-construction * {
+	font-style: bold;
+}
 
 
 

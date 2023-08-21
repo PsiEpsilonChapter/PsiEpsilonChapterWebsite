@@ -4,6 +4,7 @@ class History extends React.Component {
 	render() {
 		return (
 		<div className="HistorySummary">
+			<h1> Summary </h1>
 			<p>
 		In January 2017, a group of students at Florida Tech recognized the absence of a close-knit campus community for engineering students. They desired an organization that would foster personal and professional growth while accommodating both genders. Discovering the values of Theta Tau, a national co-ed engineering fraternity, they decided to establish a local fraternity called Zeta Theta Tau. With 10 core members, they organized social and professional development events during their first semester.
 				</p>
@@ -31,7 +32,17 @@ Throughout the Spring 2021 semester, the colony thrived by hosting virtual movie
 			<div>
 			</div>
 
+			<h1> Regents Hall </h1>
+			
+			<div>
+				<div>
+					<b>Current Regent</b>
+				</div>
+
 			</div>
+			<h1> Family Tree </h1>
+			</div>
+
 
 		);
 	}
