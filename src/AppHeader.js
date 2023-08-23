@@ -37,7 +37,7 @@ class AppHeader extends React.Component {
 		    <title> Psi Epsilon Chapter </title>
 	    </head>
       <div className="App-header">
-        <div id="header" className="header-bar">
+        <div id="header-collection" className="header-bar">
           <div onClick={() => this.props.setPage(AppPagesEnum.Home)}>
 
 

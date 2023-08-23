@@ -5,25 +5,49 @@
 	--red-color: white;
 	--animation-time: 50s;
 }
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
 }
 
+.mobile-header {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: right;
+	height: 5vh;
+	padding: 1vh;
+	z-index: 10;
+}
+
+.mobile-header>* {
+	display: flex;
+	flex-direction: row;
+	max-height: 60%;
+}
 
 .header-bar {
+		z-index: 15;
 	background-color: white;
 	z-index: 9;
-	display: flex;	
+	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
@@ -36,6 +60,7 @@ code {
 	width: 4vh;
 	margin-right: 1vh;
 }
+
 .header-bar div:hover {
 	border-bottom: 1vh solid red;
 }
@@ -50,6 +75,24 @@ code {
 
 .header-bar div:hover #members-icon {
 	transform: translate(0, -0.5vh);
+}
+
+.header-bar div {}
+
+/* Responsive adjustments for screens smaller than 768px (common breakpoint for tablets) */
+@media (max-width: 768px) {
+	.header-bar {
+		flex-direction: column;
+		height: auto;
+		padding: 1rem 0;
+		position: absolute;
+		top: 10vh;
+		left: -100%;
+		width: 100%;
+		opacity: 0;
+		transition: all 0.2s ease-in-out;
+
+	}
 
 }
 
@@ -58,10 +101,10 @@ h1 {
 }
 
 .member-profile {
-	
+
 	max-width: 40vw;
 	text-align: center;
-	box-shadow: 0 0 10px 10px rgba(0,0,0,.2);
+	box-shadow: 0 0 10px 10px rgba(0, 0, 0, .2);
 	border-radius: 1vw;
 
 }
@@ -71,7 +114,8 @@ h1 {
 }
 
 .member-profile img {
-	max-width: 55%;;
+	max-width: 55%;
+	;
 	border-radius: 1vw;
 }
 
@@ -79,7 +123,7 @@ h1 {
 	background-color: aliceblue;
 	display: grid;
 	padding: 10%;
-	  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
 }
 
 .member-display * {
@@ -99,7 +143,7 @@ h1 {
 }
 
 #page-title * {
-	font-size: 10vh;
+	font-size: 7vw;
 
 }
 
@@ -107,7 +151,7 @@ h1 {
 	font-size: 50%;
 }
 
-.theta-tau-title  {
+.theta-tau-title {
 	display: flex;
 	flex-direction: row;
 }
@@ -129,7 +173,7 @@ h1 {
 	flex-direction: row;
 	width: 100%;
 	background-color: white;
-	justify-content: space-around ;
+	justify-content: space-around;
 	max-width: 95%;
 
 }
@@ -145,14 +189,15 @@ h1 {
 }
 
 @keyframes fadeInBottom {
-  0% {
-    transform: translateY(10%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+	0% {
+		transform: translateY(10%);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
 }
 
 .theta-title {
@@ -166,10 +211,10 @@ h1 {
 }
 
 #chapter-title {
-	font-size: 10vh;
-	text-shadow: 0 0 25px #000000;	
+	text-shadow: 0 0 25px #000000;
 	color: white;
 }
+
 .chapter-letters {
 	font-family: 'Times New Roman';
 }
@@ -187,41 +232,43 @@ h1 {
 }
 
 .gear-svg {
-  position: absolute;
-  width: 22vw;
-  opacity: 0.5;
-  transform-origin: 50% 50%;
-margin: -12vw;
-  transform: translate(-50%, -50%);
+	position: absolute;
+	width: 22vw;
+	opacity: 0.5;
+	transform-origin: 50% 50%;
+	margin: -12vw;
+	transform: translate(-50%, -50%);
 }
 
 .spin-ccw {
-  animation: spin-ccw var(--animation-time) linear infinite;
+	animation: spin-ccw var(--animation-time) linear infinite;
 }
 
 .spin-cw {
-  animation: spin-cw var(--animation-time) linear infinite;
+	animation: spin-cw var(--animation-time) linear infinite;
 
 }
 
 .gear-bottom {
-  bottom: 0%;
+	bottom: 0%;
 }
 
 .gear-left {
-  left: 0%;
+	left: 0%;
 }
 
 .gear-right {
-  right: 0%;
+	right: 0%;
 }
 
 .gear-top {
-  top: 0%;
+	top: 0%;
 }
+
 .gear-middle-hor {
-  right: 50%;
+	right: 50%;
 }
+
 .gear-middle-ver {
 	top: 50%;
 }
@@ -232,7 +279,7 @@ margin: -12vw;
 	overflow-y: hidden;
 	padding: 0px;
 	display: flex;
-	height: 85vh;
+	height: 40vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -241,7 +288,7 @@ margin: -12vw;
 	background-size: cover;
 	width: 100%;
 	transition: all 1s ease-in-out;
-	box-shadow: inset 0 0 0 1000px rgba(220,0,0,.2);
+	box-shadow: inset 0 0 0 1000px rgba(220, 0, 0, .2);
 }
 
 
@@ -266,11 +313,11 @@ margin: -12vw;
 
 }
 
-.gallery-list { 
+.gallery-list {
 
 	display: grid;
 	padding: 10%;
-	  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 
 }
 
@@ -288,17 +335,27 @@ margin: -12vw;
 
 
 @keyframes spin-cw {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 @keyframes spin-ccw {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(-360deg); }
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(-360deg);
+	}
 }
 
 .orientation {
-	box-shadow: 0 0 5vh 5vh rgba(0,0,0,.4);
+	box-shadow: 0 0 5vh 5vh rgba(0, 0, 0, .4);
 	background-color: white;
 	height: max-content;
 	z-index: 9;
@@ -311,17 +368,18 @@ margin: -12vw;
 }
 
 .footer {
-	padding: 1.5%;
+	padding: 4%;
 	height: 15vh;
 	background-color: #0A0A0A;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-/* justify-content: space-around; */
+	/* justify-content: space-around; */
 	font-size: 2vh;
 	height: auto;
 }
+
 .footer * {
 	font-size: 3vh;
 	margin-right: 5%;
@@ -332,13 +390,13 @@ margin: -12vw;
 }
 
 .footer img {
-max-width: 10vw;
+	max-width: 10vw;
 }
 
 
 .footer * {
 	color: white;
-	
+
 }
 
 .footer .theta-tau-logo {
@@ -358,7 +416,7 @@ max-width: 10vw;
 	width: 8%;
 }
 
-#discord_logo { 
+#discord_logo {
 	width: 10%;
 }
 
@@ -420,5 +478,20 @@ max-width: 10vw;
 	font-style: bold;
 }
 
+.mobile-menu-icon {
+	rotate: 0deg;
+	transition: all 0.2s ease-in-out;
+}
 
-
+.backdrop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 1;
+	display: block;
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
