@@ -8,8 +8,14 @@ import members_icon from "./icons/members.png";
 import silly_icon from "./icons/silly.png";
 import PsiEps from "./PsiEps.png";
 // import members_icon from "./icons/members.png"
+import HeaderCollection from "./HeaderCollection.js";
 
 class MobileAppHeader extends React.Component {
+  constructor() {
+    super();
+    this.headerCollection = <HeaderCollection />;
+  }
+
   toggleModal() {
     console.log("openModal called");
     console.log("this.modalOpen is " + this.modalOpen);
@@ -75,64 +81,7 @@ class MobileAppHeader extends React.Component {
           </svg>
           <img id="logo" src={PsiEps} width="40vw" alt="Psi Epsilon Logo" />
           <div className="App-header MobileAppHeader">
-            <div id="header-collection" className="header-bar">
-              <div
-                onClick={() => {
-                  this.props.setPage(AppPagesEnum.Home);
-                  this.toggleModal();
-                }}
-              >
-                <img src={home_icon} />
-                Home
-              </div>
-
-              <div
-                onClick={() => {
-                  this.props.setPage(AppPagesEnum.Mission);
-                  this.toggleModal();
-                }}
-              >
-                <img src={mission_icon} />
-                Mission
-              </div>
-              <div
-                onClick={() => {
-                  this.props.setPage(AppPagesEnum.History);
-                  this.toggleModal();
-                }}
-              >
-                <img src={history_icon} /> History{" "}
-              </div>
-              <div
-                onClick={() => {
-                  this.props.setPage(AppPagesEnum.Members);
-                  this.toggleModal();
-                }}
-              >
-                <img id="members-icon" src={members_icon} /> Members{" "}
-              </div>
-              <div
-                onClick={() => {
-                  this.props.setPage(AppPagesEnum.Gallery);
-                  this.toggleModal();
-                }}
-              >
-                <img src={gallery_icon} /> Gallery{" "}
-              </div>
-              <div
-                onClick={() => {
-                  this.props.setPage(AppPagesEnum.Silly);
-                  this.toggleModal();
-                }}
-              >
-                <img
-                  src={silly_icon}
-                  style={{ height: "4vh", width: "auto" }}
-                />{" "}
-                Silly{" "}
-              </div>
-              <div>🇺🇸 EN</div>
-            </div>
+            {this.headerCollection}
           </div>
         </div>
       </div>
