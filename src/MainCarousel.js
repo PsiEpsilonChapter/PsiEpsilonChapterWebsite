@@ -114,20 +114,20 @@ class MainCarousel extends React.Component {
     var gears = this.getGears();
 
     // set a timer for 3 seconds to change properties of carousel-container
-    this.timeout = setTimeout(() => {
-      console.log(" this.current_showing is ");
-      console.log(this.current_showing);
-      console.log(this.CarouselContent[this.current_showing]);
-      console.log(this.CarouselContent[this.current_showing].image);
-      var next_showing = (this.current_showing + 1) % 3;
+    // this.timeout = setTimeout(() => {
+    // console.log(" this.current_showing is ");
+    // console.log(this.current_showing);
+    // console.log(this.CarouselContent[this.current_showing]);
+    // console.log(this.CarouselContent[this.current_showing].image);
+    // var next_showing = (this.current_showing + 1) % 3;
 
-      var carouselContainer = document.getElementById("carousel-container");
+    // var carouselContainer = document.getElementById("carousel-container");
 
-      carouselContainer.style.backgroundImage = `url(${this.CarouselContent[next_showing].image})`;
-      var carouselSlogan = document.getElementById("CarouselSlogan");
-      carouselSlogan.innerHTML = `${this.CarouselContent[next_showing].slogan}`;
-      this.current_showing = next_showing;
-    }, 3000);
+    // carouselContainer.style.backgroundImage = `url(${this.CarouselContent[next_showing].image})`;
+    // var carouselSlogan = document.getElementById("CarouselSlogan");
+    // carouselSlogan.innerHTML = `${this.CarouselContent[next_showing].slogan}`;
+    // this.current_showing = next_showing;
+    // }, 3000);
 
     return (
       <div

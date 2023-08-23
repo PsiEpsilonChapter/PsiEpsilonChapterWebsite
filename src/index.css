@@ -79,22 +79,6 @@ code {
 
 .header-bar div {}
 
-/* Responsive adjustments for screens smaller than 768px (common breakpoint for tablets) */
-@media (max-width: 768px) {
-	.header-bar {
-		flex-direction: column;
-		height: auto;
-		padding: 1rem 0;
-		position: absolute;
-		top: 10vh;
-		left: -100%;
-		width: 100%;
-		opacity: 0;
-		transition: all 0.2s ease-in-out;
-
-	}
-
-}
 
 h1 {
 	text-align: center;
@@ -114,19 +98,18 @@ h1 {
 }
 
 .member-profile img {
-	max-width: 55%;
-	;
+	max-width: 55%; ;
 	border-radius: 1vw;
 }
 
 .member-display {
 	background-color: aliceblue;
 	display: grid;
-	padding: 10%;
+padding: 10%;
 	grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
 }
 
-.member-display * {
+.member-display > div {
 	margin-right: 10%;
 	margin-bottom: 10%;
 }
@@ -321,7 +304,7 @@ h1 {
 
 }
 
-.gallery-list * {
+.gallery-list > * {
 	width: 30vw;
 	height: 30vw;
 	margin-right: 10%;
@@ -495,3 +478,62 @@ h1 {
 	opacity: 0;
 	transition: all 0.2s ease-in-out;
 }
+
+
+/* Responsive adjustments for screens smaller than 768px (common breakpoint for tablets) */
+
+#greeting-picture {
+	width: 70%;
+}
+
+#WhatIsThetaTau {
+	font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+	.header-bar {
+		flex-direction: column;
+		height: auto;
+		padding: 1rem 0;
+		position: absolute;
+		top: 10vh;
+		left: -100%;
+		width: 100%;
+		opacity: 0;
+		transition: all 0.2s ease-in-out;
+
+	}
+	.member-display {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 50%);
+		max-width: 100%;
+	}
+
+	.member-profile {
+		max-width: 100%;
+		height: auto;
+		font-size: 1%;
+	}
+	.member-profile > div {
+	margin: 0px;
+	margin-right: 10%;
+	margin-left: 10%;
+	}
+
+	.member-name {
+		font-size: 2vh;
+		font-weight: bold;
+	}
+	.gallery-list {
+
+		grid-template-columns: repeat(auto-fit, 50%);
+	}
+	.gallery-list * {
+		margin-right: 0%;
+		margin-left: 0%;
+		width: 100%;
+		height: auto;
+	}
+
+}
+
