@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PsiEpsilonChapterWebsite/static/css/main.4c9e4ce9.css",
-    "main.js": "/PsiEpsilonChapterWebsite/static/js/main.1aa35613.js",
+    "main.css": "/PsiEpsilonChapterWebsite/static/css/main.86cc4837.css",
+    "main.js": "/PsiEpsilonChapterWebsite/static/js/main.9b7da1d6.js",
     "static/js/787.a3982a60.chunk.js": "/PsiEpsilonChapterWebsite/static/js/787.a3982a60.chunk.js",
     "static/media/everyone_cleanup_peter_adli_landon3.png": "/PsiEpsilonChapterWebsite/static/media/everyone_cleanup_peter_adli_landon3.2ec2b92817db153ef822.png",
     "static/media/everyone_cleanup_peter_adli_landon.png": "/PsiEpsilonChapterWebsite/static/media/everyone_cleanup_peter_adli_landon.2c947bdebd330de8a6ce.png",
@@ -125,12 +125,12 @@
     "static/media/members.png": "/PsiEpsilonChapterWebsite/static/media/members.e5cb3c5eb890b0f37932.png",
     "static/media/civil-engineering.png": "/PsiEpsilonChapterWebsite/static/media/civil-engineering.cdcba98ab6871d739cf6.png",
     "index.html": "/PsiEpsilonChapterWebsite/index.html",
-    "main.4c9e4ce9.css.map": "/PsiEpsilonChapterWebsite/static/css/main.4c9e4ce9.css.map",
-    "main.1aa35613.js.map": "/PsiEpsilonChapterWebsite/static/js/main.1aa35613.js.map",
+    "main.86cc4837.css.map": "/PsiEpsilonChapterWebsite/static/css/main.86cc4837.css.map",
+    "main.9b7da1d6.js.map": "/PsiEpsilonChapterWebsite/static/js/main.9b7da1d6.js.map",
     "787.a3982a60.chunk.js.map": "/PsiEpsilonChapterWebsite/static/js/787.a3982a60.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c9e4ce9.css",
-    "static/js/main.1aa35613.js"
+    "static/css/main.86cc4837.css",
+    "static/js/main.9b7da1d6.js"
   ]
 }
