@@ -454,5 +454,14 @@ const member_list = {
       catchphrase: "",
     },
   },
+  regents: {
+    previous: {
+      "2018-2019": ["ptarsoly"], // Peter
+      "2020-2021": ["fswarr"], // Fiona
+      "2021-2022": ["measton", "ileon"], // Ran, Ian
+    },
+    current: "gmarrero", // Jay
+  },
 };
+
 export default member_list;

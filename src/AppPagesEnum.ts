@@ -5,7 +5,7 @@ export enum AppPagesEnum {
   Gallery = "Gallery",
   History = "History",
   Members = "Members",
-  Mission = "Mission",
+  JoinUs = "JoinUs",
   Events = "Events",
   Silly = "Silly",
 }

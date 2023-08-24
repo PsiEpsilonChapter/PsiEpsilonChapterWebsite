@@ -5,6 +5,7 @@
 	--red-color: white;
 	--animation-time: 50s;
 	--footer-gear-color: #4f4f4f;
+	--header-underline-color: #9A2A2A
 }
 
 body {
@@ -21,6 +22,18 @@ body {
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 		monospace;
+}
+
+#PreviousRegents #regents-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+	align-items: center;
+
+}
+
+#PreviousRegents #regents-list div {
+	margin-right: 1vw;
+	margin-left: 1vw;
 }
 
 .mobile-header {
@@ -64,7 +77,8 @@ code {
 }
 
 .header-bar div:hover {
-	border-bottom: 1vh solid red;
+	border-bottom: 1vh solid var(--header-underline-color);
+	cursor: pointer;
 }
 
 .header-bar div:focus * {
@@ -367,10 +381,12 @@ padding: 10%;
 }
 
 .orientation {
-	box-shadow: 0 0 5vh 5vh rgba(0, 0, 0, .4);
+	position: relative;
+/* box-shadow: 0 0 5vh 5vh rgba(0, 0, 0, .4); */
 	background-color: white;
 	height: max-content;
-	z-index: 9;
+	z-index: 0;
+	overflow: hidden;
 
 }
 

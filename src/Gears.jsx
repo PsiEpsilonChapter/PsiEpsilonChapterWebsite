@@ -16,6 +16,17 @@ class GearUtils extends Component {
     return gears;
   };
 
+  static getGearsOrientation = () => {
+    console.log("Getting gears...");
+    var gears = [];
+    for (var i = 0; i < this.gear_styles_orientation.length; i++) {
+      gears = gears.concat(
+        this.get_gear_type(i, GearUtils.gear_styles_orientation)
+      );
+    }
+    return gears;
+  };
+
   static getGearsFooter = () => {
     console.log("Getting gears...");
     var gears = [];
@@ -43,8 +54,19 @@ class GearUtils extends Component {
     ["gear-svg spin-ccw ", 2, { left: "20%", width: "10vw", bottom: "15%" }],
     ["gear-svg spin-ccw ", 2, { left: "20%", width: "10vw", top: "15%" }],
     ["gear-svg spin-ccw ", 2, { right: "20%", width: "10vw", bottom: "15%" }],
-    ["gear-svg spin-ccw ", 2, { right: "20%", width: "10vw", bottom: "15%" }],
     ["gear-svg spin-ccw ", 2, { right: "20%", width: "10vw", top: "15%" }],
+  ];
+
+  static gear_styles_orientation = [
+    ["gear-svg spin-cw gear-bottom gear-right", 1, { bottom: "21%" }],
+    ["gear-svg spin-cw gear-top gear-right", 1, { top: "23%" }],
+    [
+      "gear-svg spin-ccw gear-middle-ver gear-right",
+      1,
+      { transform: "rotate(-50deg)" },
+    ],
+    ["gear-svg spin-ccw ", 2, { right: "16%", width: "10vw", bottom: "15%" }],
+    ["gear-svg spin-ccw ", 2, { right: "16%", width: "10vw", top: "15%" }],
   ];
 
   static gear_styles_footer = [

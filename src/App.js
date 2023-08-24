@@ -9,6 +9,7 @@ import Tree from "./tree.js";
 import Members from "./members.js";
 import History from "./history.js";
 import MobileAppHeader from "./MobileAppHeader";
+import JoinUs from "./JoinUs";
 
 // import "./App.css";
 
@@ -82,6 +83,7 @@ class App extends React.Component {
     console.log(this.state.currentPage);
     console.log("Is Mobile: ");
     console.log(this.state.isMobile);
+    console.log(`Window width si ${window.innerWidth} px`);
     console.log(`Current state is ${this.state.currentPage}`);
 
     if (this.state.isMobile) {
@@ -104,6 +106,8 @@ class App extends React.Component {
       ret = this.renderGalleryPage();
     } else if (this.state.currentPage === AppPagesEnum.Silly) {
       ret = this.renderSillySection();
+    } else if (this.state.currentPage === AppPagesEnum.JoinUs) {
+      ret = this.renderJoinUsPage();
     } else {
       ret = this.renderHomePage();
     }
@@ -149,6 +153,17 @@ class App extends React.Component {
         {this.backdrop}
         {this.appHeader}
         <Gallery />
+        <Footer />
+      </div>
+    );
+  }
+
+  renderJoinUsPage() {
+    return (
+      <div className="App">
+        {this.backdrop}
+        {this.appHeader}
+        <JoinUs />
         <Footer />
       </div>
     );

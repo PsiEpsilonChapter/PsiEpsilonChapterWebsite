@@ -1,34 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import thetatau1 from "./thetatau1.jpg";
-import thetatau2 from "./thetatau2.jpg";
+import GearUtils from "./Gears.jsx";
 
 class Orientation extends React.Component {
   render() {
+    var gears = GearUtils.getGearsOrientation();
     return (
       <div className="orientation">
-        <div id="WhatIsThetaTau" className="what-is-theta-tau hor-flex">
-          <div>
-            {"TODO: Change this"}
-            <img id="greeting-picture" alt="Changeme" src={thetatau2} />
-          </div>
-          <div id="">
-            <h1>What is Theta Tau?</h1>
-            <div>
-              Theta Tau is a <b>coed, professional engineering fraternity</b>.
-              We focus on three main activities, these being{" "}
-              <b>professional development</b>, <b>brotherhood</b>, and{" "}
-              <b>volunteering</b>.
-            </div>
-          </div>
-        </div>
-        <div>
-          <h1>Mission</h1>
-          The purpose of Theta Tau is to develop and maintain a high standard of
-          professional interest among its members, and to unite them in a strong
-          bond of fraternal fellowship.
-        </div>
-
         <div id="HowToJoin" className="hor-flex red-background">
           <div>
             <div className="joining-headers">How do I join?</div>{" "}
@@ -76,6 +54,7 @@ class Orientation extends React.Component {
             <img src={thetatau1} width="50%" alt="" />
           </div>
         </div>
+        {gears}
       </div>
     );
   }

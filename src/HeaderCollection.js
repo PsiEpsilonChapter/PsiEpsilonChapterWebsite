@@ -20,24 +20,6 @@ class HeaderCollection extends React.Component {
           <img src={home_icon} />
           Home
         </div>
-
-        <div
-          onClick={() => {
-            this.props.setPage(AppPagesEnum.Mission);
-            this.props.toggleModal();
-          }}
-        >
-          <img src={mission_icon} />
-          What We Do
-        </div>
-        <div
-          onClick={() => {
-            this.props.setPage(AppPagesEnum.History);
-            this.props.toggleModal();
-          }}
-        >
-          <img src={history_icon} /> History{" "}
-        </div>
         <div
           onClick={() => {
             this.props.setPage(AppPagesEnum.Members);
@@ -48,11 +30,29 @@ class HeaderCollection extends React.Component {
         </div>
         <div
           onClick={() => {
+            this.props.setPage(AppPagesEnum.History);
+            this.props.toggleModal();
+          }}
+        >
+          <img src={history_icon} /> History{" "}
+        </div>
+
+        <div
+          onClick={() => {
             this.props.setPage(AppPagesEnum.Gallery);
             this.props.toggleModal();
           }}
         >
           <img src={gallery_icon} /> Gallery{" "}
+        </div>
+        <div
+          onClick={() => {
+            this.props.setPage(AppPagesEnum.JoinUs);
+            this.props.toggleModal();
+          }}
+        >
+          <img src={mission_icon} />
+          Join Us
         </div>
         <div
           onClick={() => {
