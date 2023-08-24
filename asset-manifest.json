@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PsiEpsilonChapterWebsite/static/css/main.0d0ec2db.css",
-    "main.js": "/PsiEpsilonChapterWebsite/static/js/main.b381a4b0.js",
+    "main.css": "/PsiEpsilonChapterWebsite/static/css/main.4c9e4ce9.css",
+    "main.js": "/PsiEpsilonChapterWebsite/static/js/main.1aa35613.js",
     "static/js/787.a3982a60.chunk.js": "/PsiEpsilonChapterWebsite/static/js/787.a3982a60.chunk.js",
     "static/media/everyone_cleanup_peter_adli_landon3.png": "/PsiEpsilonChapterWebsite/static/media/everyone_cleanup_peter_adli_landon3.2ec2b92817db153ef822.png",
     "static/media/everyone_cleanup_peter_adli_landon.png": "/PsiEpsilonChapterWebsite/static/media/everyone_cleanup_peter_adli_landon.2c947bdebd330de8a6ce.png",
@@ -119,17 +119,18 @@
     "static/media/computer-engineering.png": "/PsiEpsilonChapterWebsite/static/media/computer-engineering.507b0d27564abf70e243.png",
     "static/media/gallery.png": "/PsiEpsilonChapterWebsite/static/media/gallery.fd3a136a75a0313f69b4.png",
     "static/media/silly.png": "/PsiEpsilonChapterWebsite/static/media/silly.d2d7d45151df5a9f5442.png",
+    "static/media/PsiEpsProfileGray.png": "/PsiEpsilonChapterWebsite/static/media/PsiEpsProfileGray.1f17b3c302368c12b9f8.png",
     "static/media/mission.png": "/PsiEpsilonChapterWebsite/static/media/mission.2901470a4c0212d2671b.png",
     "static/media/computer-science.png": "/PsiEpsilonChapterWebsite/static/media/computer-science.1e0b2bbe328367cf452f.png",
     "static/media/members.png": "/PsiEpsilonChapterWebsite/static/media/members.e5cb3c5eb890b0f37932.png",
     "static/media/civil-engineering.png": "/PsiEpsilonChapterWebsite/static/media/civil-engineering.cdcba98ab6871d739cf6.png",
     "index.html": "/PsiEpsilonChapterWebsite/index.html",
-    "main.0d0ec2db.css.map": "/PsiEpsilonChapterWebsite/static/css/main.0d0ec2db.css.map",
-    "main.b381a4b0.js.map": "/PsiEpsilonChapterWebsite/static/js/main.b381a4b0.js.map",
+    "main.4c9e4ce9.css.map": "/PsiEpsilonChapterWebsite/static/css/main.4c9e4ce9.css.map",
+    "main.1aa35613.js.map": "/PsiEpsilonChapterWebsite/static/js/main.1aa35613.js.map",
     "787.a3982a60.chunk.js.map": "/PsiEpsilonChapterWebsite/static/js/787.a3982a60.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d0ec2db.css",
-    "static/js/main.b381a4b0.js"
+    "static/css/main.4c9e4ce9.css",
+    "static/js/main.1aa35613.js"
   ]
 }
