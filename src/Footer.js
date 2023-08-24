@@ -3,9 +3,11 @@ import theta_tau_logo from "./theta-tau.png";
 import instagram_logo from "./icons/instagram-logo.png";
 import facebook_logo from "./icons/facebook-logo.png";
 import discord_logo from "./icons/discord-logo.png";
+import GearUtils from "./Gears.jsx";
 
 class Footer extends React.Component {
   render() {
+    var gears = GearUtils.getGearsFooter();
     return (
       <div className="footer">
         {" "}
@@ -18,7 +20,7 @@ class Footer extends React.Component {
             </div>
             <div>
               <div className="big">Address</div>
-              <p> 1010 W. Green St. Urbana, IL 61801 </p>
+              <p>150W. University Boulevard, 32901 Melbourne, FL </p>
             </div>
             <div>
               <div className="big">Socials</div>
@@ -43,6 +45,7 @@ class Footer extends React.Component {
             </div>
           </div>
         </div>
+        {gears}
       </div>
     );
   }

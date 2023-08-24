@@ -11,9 +11,16 @@ import PsiEps from "./PsiEps.png";
 import HeaderCollection from "./HeaderCollection.js";
 
 class MobileAppHeader extends React.Component {
-  constructor() {
-    super();
-    this.headerCollection = <HeaderCollection />;
+  constructor(props) {
+    super(props);
+    this.headerCollection = (
+      <HeaderCollection
+        setPage={props.setPage}
+        toggleModal={() => {
+          this.toggleModal();
+        }}
+      />
+    );
   }
 
   toggleModal() {
@@ -38,6 +45,7 @@ class MobileAppHeader extends React.Component {
     this.svg.style.transform = "rotate(0)";
     this.header_collection.style.opacity = "0";
     this.header_collection.style.left = "-100%";
+    this.backdrop.style.zIndex = "-1";
     this.backdrop.style.opacity = "0";
     this.body.style.overflowY = "auto";
   }
@@ -47,6 +55,7 @@ class MobileAppHeader extends React.Component {
     this.header_collection.style.opacity = "1";
     this.header_collection.style.left = "0";
     this.backdrop.style.opacity = "1";
+    this.backdrop.style.zIndex = "1";
     this.body.style.overflowY = "hidden";
   }
   modalOpen = false;

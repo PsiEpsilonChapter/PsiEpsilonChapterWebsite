@@ -14,7 +14,7 @@ class HeaderCollection extends React.Component {
         <div
           onClick={() => {
             this.props.setPage(AppPagesEnum.Home);
-            this.toggleModal();
+            this.props.toggleModal();
           }}
         >
           <img src={home_icon} />
@@ -24,7 +24,7 @@ class HeaderCollection extends React.Component {
         <div
           onClick={() => {
             this.props.setPage(AppPagesEnum.Mission);
-            this.toggleModal();
+            this.props.toggleModal();
           }}
         >
           <img src={mission_icon} />
@@ -33,7 +33,7 @@ class HeaderCollection extends React.Component {
         <div
           onClick={() => {
             this.props.setPage(AppPagesEnum.History);
-            this.toggleModal();
+            this.props.toggleModal();
           }}
         >
           <img src={history_icon} /> History{" "}
@@ -41,7 +41,7 @@ class HeaderCollection extends React.Component {
         <div
           onClick={() => {
             this.props.setPage(AppPagesEnum.Members);
-            this.toggleModal();
+            this.props.toggleModal();
           }}
         >
           <img id="members-icon" src={members_icon} /> Members{" "}
@@ -49,7 +49,7 @@ class HeaderCollection extends React.Component {
         <div
           onClick={() => {
             this.props.setPage(AppPagesEnum.Gallery);
-            this.toggleModal();
+            this.props.toggleModal();
           }}
         >
           <img src={gallery_icon} /> Gallery{" "}
@@ -57,7 +57,7 @@ class HeaderCollection extends React.Component {
         <div
           onClick={() => {
             this.props.setPage(AppPagesEnum.Silly);
-            this.toggleModal();
+            this.props.toggleModal();
           }}
         >
           <img src={silly_icon} style={{ height: "4vh", width: "auto" }} />{" "}

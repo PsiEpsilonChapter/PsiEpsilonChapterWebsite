@@ -31,6 +31,7 @@ class Gallery extends React.Component {
     console.log(`listOfImages: ${this.listOfImages}`);
     return (
       <PhotoProvider>
+        <div>Click on the images to scroll through!</div>
         <div className="gallery-list">
           {this.listOfImages.map((item, index) => (
             <PhotoView key={index} src={item}>

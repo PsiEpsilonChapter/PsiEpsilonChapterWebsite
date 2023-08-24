@@ -5,9 +5,16 @@ import HeaderCollection from "./HeaderCollection.js";
 // import members_icon from "./icons/members.png"
 
 class AppHeader extends React.Component {
-  constructor() {
-    super();
-    this.headerCollection = <HeaderCollection />;
+  constructor(props) {
+    super(props);
+    this.headerCollection = (
+      <HeaderCollection
+        setPage={props.setPage}
+        toggleModal={() => {
+          console.log("no modal since it is not on mobile!");
+        }}
+      />
+    );
   }
   render() {
     console.log("AppPagesEnum is ");
