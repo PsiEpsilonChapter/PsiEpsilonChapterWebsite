@@ -65,12 +65,41 @@ class MobileAppHeader extends React.Component {
     console.log(AppPagesEnum);
 
     return (
-      <div className="mobile-header">
+      <div className="HeaderWrapper mobile-header">
         <head>
           <link rel="icon" href={PsiEps} />
           <title> Psi Epsilon Chapter </title>
         </head>
         <div>
+          {/* <svg width="20vw" height="20vw" viewBox="0 0 210 297" id="svg5"> */}
+          {/* <g id="layer1"> */}
+          {/* <rect */}
+          {/* id="rect846" */}
+          {/* width="118.99841" */}
+          {/* height="18.341551" */}
+          {/* x="35.081596" */}
+          {/* y="49.158695" */}
+          {/* ry="9.1707754" */}
+          {/* /> */}
+          {/* <rect */}
+          {/* id="rect846-3" */}
+          {/* width="118.99841" */}
+          {/* height="18.341551" */}
+          {/* x="35.081596" */}
+          {/* y="79.089935" */}
+          {/* ry="9.1707754" */}
+          {/* /> */}
+          {/* <rect */}
+          {/* id="rect846-3-6" */}
+          {/* width="118.99841" */}
+          {/* height="18.341551" */}
+          {/* x="35.081596" */}
+          {/* y="109.02118" */}
+          {/* ry="9.1707754" */}
+          {/* /> */}
+          {/* </g> */}
+          {/* </svg> */}
+
           <svg
             onClick={() => this.toggleModal()}
             fill="#000000"

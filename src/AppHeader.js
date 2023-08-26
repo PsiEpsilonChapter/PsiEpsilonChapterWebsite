@@ -21,7 +21,7 @@ class AppHeader extends React.Component {
     console.log(AppPagesEnum);
 
     return (
-      <div>
+      <div className="HeaderWrapper">
         <div className="under-construction">
           <b>!</b>
 
