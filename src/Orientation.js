@@ -9,7 +9,7 @@ class Orientation extends React.Component {
       <div className="orientation">
         <div id="HowToJoin" className="hor-flex red-background">
           <div>
-            <div className="joining-headers">How do I join?</div>{" "}
+            <div className="joining-headers HowToJoinTitle">How do I join?</div>{" "}
             <div className="right-aligned-vert">
               <div className="joining-headers">Recruitment</div>
 

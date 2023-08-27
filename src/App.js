@@ -86,7 +86,9 @@ class App extends React.Component {
     console.log(`Window width si ${window.innerWidth} px`);
     console.log(`Current state is ${this.state.currentPage}`);
 
+    var isMobile = false;
     if (this.state.isMobile) {
+      isMobile = true;
       console.log("isMobile is true");
       this.appHeader = (
         <MobileAppHeader setPage={this.setPage} openModal={this.openModal} />
@@ -97,7 +99,7 @@ class App extends React.Component {
     }
 
     if (this.state.currentPage === AppPagesEnum.Home) {
-      var ret = this.renderHomePage();
+      var ret = this.renderHomePage(isMobile);
     } else if (this.state.currentPage === AppPagesEnum.History) {
       ret = this.renderHistoryPage();
     } else if (this.state.currentPage === AppPagesEnum.Members) {
@@ -109,18 +111,20 @@ class App extends React.Component {
     } else if (this.state.currentPage === AppPagesEnum.JoinUs) {
       ret = this.renderJoinUsPage();
     } else {
-      ret = this.renderHomePage();
+      ret = this.renderHomePage(isMobile);
     }
     return ret;
   }
   backdrop = (<div id="backdrop" className="backdrop"></div>);
 
-  renderHomePage() {
+  renderHomePage(isMobile) {
+    console.log("renderHomePage called");
+    console.log(`isMobile is ${isMobile}`);
     return (
       <div className="App">
         {this.appHeader}
         {this.backdrop}
-        <MainPage />
+        <MainPage isMobile={isMobile} />
         <Footer />
       </div>
     );
