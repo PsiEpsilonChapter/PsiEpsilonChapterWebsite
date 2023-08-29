@@ -774,13 +774,11 @@ padding: 10%;
 	}
 	.gallery-list {
 
-		grid-template-columns: repeat(auto-fit, 50%);
+		grid-template-columns: repeat(auto-fit, 30%);
 	}
-	.gallery-list * {
+	.gallery-list div {
 		margin-right: 0%;
 		margin-left: 0%;
-		width: 100%;
-		height: auto;
 	}
 
 	.footer {

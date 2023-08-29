@@ -456,7 +456,7 @@ const member_list = {
   },
   regents: {
     previous: {
-      "2018-2019": ["ptarsoly"], // Peter
+      "2018-2019": ["crush"], // Peter
       "2020-2021": ["fswarr"], // Fiona
       "2021-2022": ["measton", "ileon"], // Ran, Ian
     },
