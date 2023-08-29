@@ -87,7 +87,11 @@ code {
 	align-items: center;
 	justify-content: space-around;
 	font-size: 2vw;
-	height: 15vh;
+	height: 10vh;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
 
 }
 
@@ -380,14 +384,26 @@ padding: 10%;
 
 }
 
-.gallery-list > * {
-	width: 30vw;
-	height: 30vw;
+.gallery-list > div {
+	position: relative;
+	width: 20vw;
+	height: 20vw;
 	margin-right: 10%;
 	object-fit: cover;
+	transition: all 0.2s ease-in-out;
 }
 
+.gallery-list > div:hover {
+	cursor: pointer;
+	transform: scale(1.5);
+}
 
+.gallery-list > div > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+}
 
 
 

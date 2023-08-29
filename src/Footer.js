@@ -43,6 +43,10 @@ class Footer extends React.Component {
                 <img id="discord_logo" src={discord_logo} />
               </div>
             </div>
+            <br />
+            <div>
+              <div className="big">Credits</div>
+            </div>
           </div>
         </div>
         {gears}

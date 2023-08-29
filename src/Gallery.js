@@ -2,6 +2,7 @@ import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 import { RViewer, RViewerTrigger } from "react-viewerjs";
 import React from "react";
+import GalleryImage from "./GalleryImage";
 
 class Gallery extends React.Component {
   constructor(props) {
@@ -25,20 +26,31 @@ class Gallery extends React.Component {
     );
   }
 
+  randomRotation() {
+    console.log("Random rotation is being called");
+    let rotation = Math.floor(Math.random() * 6) - 1;
+    console.log(`Rotation: ${rotation}`);
+    return rotation;
+  }
+
   render() {
     let thumbImageUrls = this.listOfImages;
-    console.log(`thumbImageUrls: ${thumbImageUrls}`);
-    console.log(`listOfImages: ${this.listOfImages}`);
+    // console.log(`thumbImageUrls: ${thumbImageUrls}`);
+    // console.log(`listOfImages: ${this.listOfImages}`);
+    var innerItems = this.listOfImages.map((item, index) => {
+      var deg = this.randomRotation();
+      var props = {
+        key: index,
+        src: item,
+        index: index,
+        deg: deg,
+      };
+      return <GalleryImage index={index} item={item} deg={deg} />;
+    });
     return (
       <PhotoProvider>
         <div>Click on the images to scroll through!</div>
-        <div className="gallery-list">
-          {this.listOfImages.map((item, index) => (
-            <PhotoView key={index} src={item}>
-              <img src={item} alt="" />
-            </PhotoView>
-          ))}
-        </div>
+        <div className="gallery-list">{innerItems}</div>
       </PhotoProvider>
     );
   }
