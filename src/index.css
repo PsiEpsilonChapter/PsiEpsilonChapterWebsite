@@ -380,7 +380,7 @@ padding: 10%;
 
 	display: grid;
 	padding: 10%;
-	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
 
 }
 
@@ -692,6 +692,25 @@ padding: 10%;
 .polaroid > img{
   object-fit: cover;
 }
+
+.carousel-enter {
+  opacity: 0;
+}
+
+.carousel-enter-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
+.carousel-exit {
+  opacity: 1;
+}
+
+.carousel-exit-active {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
 
 .polaroid > div {
 	font-family: 'GirlySunrise';
