@@ -56,6 +56,15 @@ class HeaderCollection extends React.Component {
         </div>
         <div
           onClick={() => {
+            this.props.setPage(AppPagesEnum.Events);
+            this.props.toggleModal();
+          }}
+        >
+          <img src={mission_icon} />
+          Events
+        </div>
+        <div
+          onClick={() => {
             this.props.setPage(AppPagesEnum.Silly);
             this.props.toggleModal();
           }}

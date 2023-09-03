@@ -1,6 +1,9 @@
 import React from "react";
 import member_list from "./member_list";
 import Regent from "./regent_entry.js";
+import FamilyTreeComponent from "./FamilyTreeComponent.js";
+import CytoScapeFamilyTree from "./CytoScapeFamilyTree.js";
+
 class History extends React.Component {
   render() {
     var previousRegents = [];
@@ -100,6 +103,8 @@ class History extends React.Component {
           <div></div>
         </div>
         <h1> Family Tree </h1>
+        {/* <FamilyTreeComponent /> */}
+        <CytoScapeFamilyTree />
       </div>
     );
   }

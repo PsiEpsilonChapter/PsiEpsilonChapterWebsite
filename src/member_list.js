@@ -1,6 +1,7 @@
 const member_list = {
   members: {
     ptarsoly: {
+      id: "ptarsoly",
       img_src: "./public/ptarsoly.png",
       name: "Peter W. Tarsoly",
       major: "Computer Engineering",
@@ -10,6 +11,7 @@ const member_list = {
       catchphrase: "",
     },
     gjacobellis: {
+    id: "gjacobellis",
       img_src: "./public/gjacobellis.png",
       name: "Garrett A. Jacobellis",
       major: "Mechanical Engineering",
@@ -18,7 +20,18 @@ const member_list = {
       origin: "Huntington, NY",
       catchphrase: "",
     },
+    athierer: {
+    id: "athierer",
+      img_src: "",
+      name: "Alex Thierer",
+      major: "Civil Engineering",
+      number: "",
+      class: "2020",
+      origin: "",
+      catchphrase: "",
+    },
     dmccook: {
+    id: "dmccook",
       img_src: "./public/dmccook.png",
       name: "Dylan L. McCook",
       major: "Aerospace Engineering",
@@ -28,6 +41,7 @@ const member_list = {
       catchphrase: "",
     },
     anoori: {
+    id: "anoori",
       img_src: "./public/anoori.png",
       name: "Amanda Noori",
       major: "Aerospace Engineering",
@@ -37,6 +51,7 @@ const member_list = {
       catchphrase: "",
     },
     dsouthwell: {
+    id: "dsouthwell",
       img_src: "./public/dsouthwell.png",
       name: "Donovan Southwell",
       major: "Aerospace Engineering",
@@ -46,6 +61,7 @@ const member_list = {
       catchphrase: "",
     },
     msyed: {
+    id: "msyed",
       img_src: "./public/msyed.png",
       name: "Muntaser Syed",
       major: "Computer Engineering",
@@ -55,6 +71,7 @@ const member_list = {
       catchphrase: "",
     },
     athierer: {
+    id: "athierer",
       img_src: "./public/athierer.png",
       name: "Alexander B. Thierer",
       major: "Civil Engineering",
@@ -64,6 +81,7 @@ const member_list = {
       catchphrase: "",
     },
     athornton: {
+    id: "athornton",
       img_src: "./public/athornton.png",
       name: "Alana Thornton",
       major: "Mechanical Engineering",
@@ -73,6 +91,7 @@ const member_list = {
       catchphrase: "",
     },
     rwhitman: {
+    id: "rwhitman",
       img_src: "./public/rwhitman.png",
       name: "Robert Whitman",
       major: "Computer Science",
@@ -82,6 +101,7 @@ const member_list = {
       catchphrase: "",
     },
     fswarr: {
+    id: "fswarr",
       img_src: "./public/fswarr.png",
       name: "Fiona E. Swarr",
       major: "Mechanical Engineering",
@@ -91,6 +111,7 @@ const member_list = {
       catchphrase: "",
     },
     sedwards: {
+    id: "sedwards",
       img_src: "./public/sedwards.png",
       name: "Sarah Edwards",
       major: "Aerospace Engineering",
@@ -100,6 +121,7 @@ const member_list = {
       catchphrase: "",
     },
     crush: {
+    id: "crush",
       img_src: "./public/crush.png",
       name: "Cassandra Rush",
       major: "Aerospace Engineering",
@@ -109,6 +131,7 @@ const member_list = {
       catchphrase: "",
     },
     ahopkins: {
+    id: "ahopkins",
       img_src: "./public/ahopkins.png",
       name: "Alexis Hopkins",
       major: "Biomedical Engineering",
@@ -118,6 +141,7 @@ const member_list = {
       catchphrase: "",
     },
     mtapaszto: {
+    id: "mtapaszto",
       img_src: "./public/mtapaszto.png",
       name: "Marcell Tapaszto",
       major: "Computer Engineering",
@@ -127,6 +151,7 @@ const member_list = {
       catchphrase: "",
     },
     measton: {
+    id: "measton",
       img_src: "./public/measton.png",
       name: "Miranda Easton",
       major: "Aerospace Engineering",
@@ -136,6 +161,7 @@ const member_list = {
       catchphrase: "",
     },
     rgriffin: {
+    id: "rgriffin",
       img_src: "./public/rgriffin.png",
       name: "Ryley P. Griffin",
       major: "Chemical Engineering",
@@ -145,6 +171,7 @@ const member_list = {
       catchphrase: "",
     },
     lblackwell: {
+    id: "lblackwell",
       img_src: "./public/lblackwell.png",
       name: "Landon C. Blackwell-Frank",
       major: "Mechanical Engineering",
@@ -154,6 +181,7 @@ const member_list = {
       catchphrase: "",
     },
     jhing: {
+    id: "jhing",
       img_src: "./public/jhing.png",
       name: "Justing Hing",
       major: "Aerospace Engineering",
@@ -163,6 +191,7 @@ const member_list = {
       catchphrase: "",
     },
     mhoadley: {
+    id: "mhoadley",
       img_src: "./public/mhoadley.png",
       name: "Michael Hoadley",
       number: 20,
@@ -172,6 +201,7 @@ const member_list = {
       catchphrase: "Rockets and friends. Who needs more?",
     },
     ileon: {
+    id: "ileon",
       img_src: "./public/ileon.png",
       name: "Ian Leon",
       major: "Aerospace Engineering",
@@ -180,6 +210,7 @@ const member_list = {
       origin: "San Jose, Costa Rica",
     },
     csisko: {
+      id: "csisko",
       img_src: "./public/csisko.png",
       name: "Caroline Sisko",
       major: "Aerospace Engineering",
@@ -189,6 +220,7 @@ const member_list = {
       catchphrase: "",
     },
     rhutchinson: {
+    id: "rhutchinson",
       img_src: "./public/rhutchinson.png",
       name: "Ryan Hutchinson",
       major: "Aerospace Engineering",
@@ -198,6 +230,7 @@ const member_list = {
       catchphrase: "",
     },
     dnieves: {
+    id: "dnieves",
       img_src: "./public/dnieves.png",
       name: "David Nieves Acarón",
       major: "Computer Engineering",
@@ -207,6 +240,7 @@ const member_list = {
       catchphrase: "",
     },
     grivasleal: {
+    id: "grivasleal",
       img_src: "./public/grivasleal.png",
       name: "Gerardo Rivas Leal",
       major: "Computer Engineering",
@@ -216,6 +250,7 @@ const member_list = {
       catchphrase: "",
     },
     atisaranni: {
+    id: "atisaranni",
       img_src: "./public/atisaranni.png",
       name: "Ashley L. Tisaranni",
       major: "Aerospace Engineering",
@@ -225,6 +260,7 @@ const member_list = {
       catchphrase: "",
     },
     kdecker: {
+    id: "kdecker",
       img_src: "./public/kdecker.png",
       name: "Kayla N. Decker",
       major: "Aerospace Engineering",
@@ -234,6 +270,7 @@ const member_list = {
       catchphrase: "",
     },
     kforero: {
+    id: "kforero",
       img_src: "./public/kforero.png",
       name: "Kathleen Forero",
       major: "Chemical Engineering",
@@ -244,6 +281,7 @@ const member_list = {
       include: false,
     },
     amichalczyk: {
+    id: "amichalczyk",
       img_src: "./public/kforero.png",
       name: "Alaina M. Michalczyk",
       major: "Mechnical Engineering",
@@ -254,6 +292,7 @@ const member_list = {
       include: false,
     },
     asullivan: {
+    id: "asullivan",
       img_src: "./public/asullivan.png",
       name: "Adli R. Sullivan",
       major: "Chemical Engineering",
@@ -263,6 +302,7 @@ const member_list = {
       catchphrase: "",
     },
     swaddell: {
+    id: "swaddell",
       img_src: "./public/swaddell.png",
       name: "Shelton Waddell",
       major: "Aerospace Engineering",
@@ -272,6 +312,7 @@ const member_list = {
       catchphrase: "",
     },
     rblomquist: {
+    id: "rblomquist",
       img_src: "./public/rblomquist.png",
       name: "Regan Blomquist",
       major: "Biomedical Engineering",
@@ -281,6 +322,7 @@ const member_list = {
       catchphrase: "",
     },
     gmarrero: {
+    id: "gmarrero",
       img_src: "./public/gmarrero.png",
       name: "Jay Marrero",
       major: "Aerospace Engineering",
@@ -290,6 +332,7 @@ const member_list = {
       catchphrase: "",
     },
     kmobley: {
+    id: "kmobley",
       img_src: "./public/kmobley.png",
       name: "Ken Mobley",
       major: "Aerospace Engineering",
@@ -299,6 +342,7 @@ const member_list = {
       catchphrase: "",
     },
     tpaige: {
+    id: "tpaige",
       img_src: "./public/tpaige.png",
       name: "Trent Paige",
       major: "Aerospace Engineering",
@@ -308,6 +352,7 @@ const member_list = {
       catchphrase: "",
     },
     cswords: {
+    id: "cswords",
       img_src: "./public/cswords.png",
       name: "Carlie Swords",
       major: "Aerospace Engineering",
@@ -317,6 +362,7 @@ const member_list = {
       catchphrase: "",
     },
     dbarnes: {
+    id: "dbarnes",
       img_src: "./public/dbarnes.png",
       name: "Dylan Barnes",
       major: "Aerospace Engineering",
@@ -326,6 +372,7 @@ const member_list = {
       catchphrase: "",
     },
     rhalcyon: {
+    id: "rhalcyon",
       img_src: "./public/rhalcyon.png",
       name: "Rosemary Halcyon-Schmitt",
       major: "Chemical Engineering",
@@ -336,6 +383,7 @@ const member_list = {
     },
 
     jjohnson: {
+    id: "jjohnson",
       img_src: "./public/jjohnson.png",
       name: "Jordan Johnson",
       major: "Civil Engineering",
@@ -346,6 +394,7 @@ const member_list = {
     },
 
     ajunkin: {
+    id: "ajunkin",
       img_src: "./public/ajunkin.png",
       name: "Andrew Junkin",
       major: "Biomedical Engineering",
@@ -355,6 +404,7 @@ const member_list = {
       catchphrase: "",
     },
     mlanahan: {
+    id: "mlanahan",
       img_src: "./public/mlanahan.png",
       name: "Madison Lanahan",
       major: "Computer Science ",
@@ -364,6 +414,7 @@ const member_list = {
       catchphrase: "",
     },
     dmcdaniels: {
+      id: "dmcdaniels",
       img_src: "./public/dmcdaniels.png",
       name: "Devlin McDaniels",
       major: "Aerospace Engineering",
@@ -373,6 +424,7 @@ const member_list = {
       catchphrase: "",
     },
     vshirley: {
+    id: "vshirley",
       img_src: "./public/vshirley.png",
       name: "Val Shirley",
       major: "Aerospace Engineering",
@@ -382,6 +434,7 @@ const member_list = {
       catchphrase: "",
     },
     kweaver: {
+    id: "kweaver",
       img_src: "./public/kweaver.png",
       name: "Keelin Weaver",
       major: "Aerospace Engineering",
@@ -391,6 +444,7 @@ const member_list = {
       catchphrase: "",
     },
     czinninger: {
+    id: "czinninger",
       img_src: "./public/czinninger.png",
       name: "Charlotte Zinninger",
       major: "Aerospace Engineering",
@@ -400,6 +454,7 @@ const member_list = {
       catchphrase: "",
     },
     oloris: {
+    id: "oloris",
       img_src: "./public/oloris.png",
       name: "Olivia Loris",
       major: "Software Engineering",
@@ -409,6 +464,7 @@ const member_list = {
       catchphrase: "",
     },
     gspitaletto: {
+    id: "gspitaletto",
       img_src: "./public/gspitaletto.png",
       name: "Genevieve Spitaletto",
       major: "Civil Engineering",
@@ -418,6 +474,7 @@ const member_list = {
       catchphrase: "",
     },
     astringer: {
+    id: "astringer",
       img_src: "./public/astringer.png",
       name: "Ashton Stringer",
       major: "Mechanical Engineering",
@@ -427,6 +484,7 @@ const member_list = {
       catchphrase: "",
     },
     zhardin: {
+    id: "zhardin",
       img_src: "./public/zhardin.png",
       name: "Zachary Hardin",
       major: "Mechanical Engineering",
@@ -436,6 +494,7 @@ const member_list = {
       catchphrase: "",
     },
     amoore: {
+    id: "amoore",
       img_src: "./public/amoore.png",
       name: "Archer Moore",
       major: "Chemical Engineering",
@@ -445,6 +504,7 @@ const member_list = {
       catchphrase: "",
     },
     gmorales: {
+      id: "gmorales",
       img_src: "./public/gmorales.png",
       name: "Gabriel Morales",
       major: "Software Engineering",
@@ -462,6 +522,19 @@ const member_list = {
     },
     current: "gmarrero", // Jay
   },
+  linkDataArray: [
+    { source: "dsouthwell", target: "mtapaszto" },
+    { source: "mtapaszto", target: "mhoadley" },
+    { source: "mhoadley", target: "dnieves" },
+    { source: "mhoadley", target: "rblomquist" },
+    { source: "dnieves", target: "czinninger" },
+    { source: "dnieves", target: "zhardin" },
+    { source: "czinninger", target: "gmorales" },
+    {source:"athierer", target: "sedwards"},
+    {source:"sedwards", target: "jhing" },
+    {source: "jhing", target: "grivasleal" },
+    {source: "jhing", target: "gmarrero" }
+  ],
 };
 
 export default member_list;
