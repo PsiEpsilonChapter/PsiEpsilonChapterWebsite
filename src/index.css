@@ -686,6 +686,32 @@ padding: 10%;
 	margin-right: 5vw;
 }
 
+.EventsError {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	max-width: 80%;
+	text-align:left;
+	margin-bottom: 5vw;
+	
+}
+
+.EventsError .error-content {
+	margin-left: 5%;
+
+}
+
+.EventsError .error-content div:first-child {
+	font-size: 6vw;
+}
+.Events {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+	justify-content: center;
+}
 
 .greeting-picture {
 	margin-right: 5%;
@@ -765,6 +791,12 @@ opacity: 0;
 .mainpage-text-and-images {
 	display: flex;
 	flex-direction: row;
+}
+
+.EventsError {
+	display: flex;
+	font-size: 4vw;
+	box-shadow:rgba(0, 0, 0, .2);
 }
 
 @media (max-width: 768px) {

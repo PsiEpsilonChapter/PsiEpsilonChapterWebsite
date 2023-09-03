@@ -10,6 +10,7 @@ import Members from "./members.js";
 import History from "./history.js";
 import MobileAppHeader from "./MobileAppHeader";
 import JoinUs from "./JoinUs";
+import Events from "./Events";
 
 // import "./App.css";
 
@@ -110,6 +111,8 @@ class App extends React.Component {
       ret = this.renderSillySection();
     } else if (this.state.currentPage === AppPagesEnum.JoinUs) {
       ret = this.renderJoinUsPage();
+    } else if (this.state.currentPage === AppPagesEnum.Events) {
+      ret = this.renderEventsPage();
     } else {
       ret = this.renderHomePage(isMobile);
     }
@@ -168,6 +171,17 @@ class App extends React.Component {
         {this.backdrop}
         {this.appHeader}
         <JoinUs />
+        <Footer />
+      </div>
+    );
+  }
+
+  renderEventsPage() {
+    return (
+      <div className="App">
+        {this.backdrop}
+        {this.appHeader}
+        <Events />
         <Footer />
       </div>
     );

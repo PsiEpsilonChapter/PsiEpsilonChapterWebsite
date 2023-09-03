@@ -25,7 +25,7 @@ class CytoScapeFamilyTree extends React.Component {
   //   console.log(key);
   //   nodeElements.push({data: value});
   // }
-  Object.values(member_list["members"]).forEach( value => { nodeElements.push({data: value})});
+  Object.values(member_list["members"]).forEach( value => {  nodeElements.push({data: value})});
   Object.values(member_list["linkDataArray"]).forEach(value => {nodeElements.push({data: value})});
 
   var elements = nodeElements;
