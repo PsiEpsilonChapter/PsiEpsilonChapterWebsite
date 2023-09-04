@@ -14,6 +14,14 @@ class CytoScapeFamilyTree extends React.Component {
     super(props);
   }
 
+  importAll(r) {
+    console.log("r is ");
+    console.log(r);
+    console.log(r.keys());
+    var mapped_arr = r.keys().map(r);
+    var local_arr = r.keys();
+    return [mapped_arr, local_arr];
+  }
   elements = null;
   style = null;
   layout = null;
@@ -64,7 +72,7 @@ class CytoScapeFamilyTree extends React.Component {
           "background-image": "data(img)",
           width: 30,
           height: 30,
-          label: "data(id)",
+          label: "data(name)",
 
           // "width": "mapData(score, 0, 0.006769776522008331, 20, 60)",
           // "height": "mapData(score, 0, 0.006769776522008331, 20, 60)",
@@ -112,73 +120,16 @@ class CytoScapeFamilyTree extends React.Component {
       },
     ];
 
-    this.stylesheet = cytoscape
-      .stylesheet()
-      .selector("node")
-      .css({
-        height: 80,
-        width: 80,
-        "background-fit": "cover",
-        "border-color": "#000",
-        "border-width": 3,
-        label: "data(id)",
-        "border-opacity": 0.5,
-      })
-      .selector(".eating")
-      .css({
-        "border-color": "red",
-      })
-      .selector(".eater")
-      .css({
-        "border-width": 9,
-      })
-      .selector("edge")
-      .css({
-        "curve-style": "bezier",
-        width: 6,
-        "target-arrow-shape": "triangle",
-        "line-color": "#ffaaaa",
-        "target-arrow-color": "#ffaaaa",
-      })
-      .selector("#bird")
-      .css({
-        "background-image": PsiEps,
-      })
-      .selector("#cat")
-      .css({
-        "background-image":
-          "https://live.staticflickr.com/1261/1413379559_412a540d29_b.jpg",
-      })
-      .selector("#ladybug")
-      .css({
-        "background-image":
-          "https://live.staticflickr.com/3063/2751740612_af11fb090b_b.jpg",
-      })
-      .selector("#aphid")
-      .css({
-        "background-image":
-          "https://live.staticflickr.com/8316/8003798443_32d01257c8_b.jpg",
-      })
-      .selector("#rose")
-      .css({
-        "background-image":
-          "https://live.staticflickr.com/5109/5817854163_eaccd688f5_b.jpg",
-      })
-      .selector("#grasshopper")
-      .css({
-        "background-image":
-          "https://live.staticflickr.com/6098/6224655456_f4c3c98589_b.jpg",
-      })
-      .selector("#plant")
-      .css({
-        "background-image":
-          "https://live.staticflickr.com/3866/14420309584_78bf471658_b.jpg",
-      })
-      .selector("#wheat")
-      .css({
-        "background-image":
-          "https://live.staticflickr.com/2660/3715569167_7e978e8319_b.jpg",
-      });
+    this.stylesheet = cytoscape.stylesheet().selector("node").css({
+      height: 80,
+      width: 80,
+      "background-fit": "cover",
+      "border-color": "#000",
+      "border-width": 3,
+      label: "data(name)",
+      "background-image": "data(img_src)",
+      "border-opacity": 0.5,
+    });
 
     this.elements = this.prepElements();
 
@@ -211,6 +162,23 @@ class CytoScapeFamilyTree extends React.Component {
 
   prepElements() {
     var data = [];
+    var modded_members_list = [];
+    for (const [key, value] of Object.entries(member_list["members"])) {
+      var member_dict = value;
+      member_dict["key"] = key;
+      member_dict = { group: "nodes", data: member_dict };
+      modded_members_list.push(member_dict);
+      console.log("member is ");
+      console.log(member_dict);
+      modded_members_list.push(member_dict);
+    }
+
+    modded_members_list = modded_members_list.concat(
+      member_list["linkDataArray"]
+    );
+    console.log("Modded members list is ");
+    console.log(modded_members_list);
+    return modded_members_list;
 
     return [
       {
