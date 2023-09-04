@@ -27,14 +27,6 @@ class Members extends React.Component {
     console.log("List of images is ");
     console.log(this.listOfImages);
     for (const [key, value] of Object.entries(member_list.members)) {
-      // console.log("value is ");
-      // console.log(value);
-      // console.log(value.img_src);
-      console.log("Image sources are ");
-      console.log(this.listOfImageSrcs);
-      console.log("member image is ");
-      console.log(value);
-      // console.log(value.img_src);
       console.log("replaced version is ");
       var modded_src = undefined;
       if (value.img_src == undefined) {

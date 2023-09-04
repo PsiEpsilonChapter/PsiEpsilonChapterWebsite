@@ -104,7 +104,9 @@ class History extends React.Component {
         </div>
         <h1> Family Tree </h1>
         {/* <FamilyTreeComponent /> */}
-        <CytoScapeFamilyTree />
+        <div id="cy-wrapper">
+          <CytoScapeFamilyTree />
+        </div>
       </div>
     );
   }

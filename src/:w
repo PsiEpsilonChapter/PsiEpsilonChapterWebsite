@@ -781,10 +781,6 @@ opacity: 0;
   background-color: white;
 }
 
-#cy div:first-child canvas{
-transform: translate(-50%, 0); 
-}
-
 
 .polaroid > div {
 	font-family: 'GirlySunrise';
@@ -798,13 +794,15 @@ transform: translate(-50%, 0);
 }
 
 #cy {
+	width: 100%;
 	height: 35vw;
 	position: relative;
 }
 
 #cy-wrapper {
-	border: solid 0.3vw black;
 	width: 100%;
+	height: 35vw;
+	border: solid 0.3vw black;
 
 }
 
