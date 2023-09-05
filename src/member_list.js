@@ -561,6 +561,9 @@ const member_list = {
     { group: "edges", data: { source: "crush", target: "rhutchison" } },
     { group: "edges", data: { source: "crush", target: "tpaige" } },
     { group: "edges", data: { source: "skaynor", target: "asullivan" } },
+    { group: "edges", data: { source: "mtapaszto", target: "dbarnes" } },
+    { group: "edges", data: { source: "ajunkin", target: "gspitaletto" } },
+    { group: "edges", data: { source: "mhoadley", target: "ajunkin" } },
     // TODO: Add Garrett to Maddie, Maddie to Riley, then Garrett to Elizabeth, and Elizabeth to Sam
   ],
 };
