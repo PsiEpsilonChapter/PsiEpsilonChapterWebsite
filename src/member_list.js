@@ -2,7 +2,7 @@ const member_list = {
   members: {
     ptarsoly: {
       id: "ptarsoly",
-      img_src: "./public/ptarsoly.png",
+      img_src: "./images/member_images/ptarsoly.png",
       name: "Peter W. Tarsoly",
       major: "Computer Engineering",
       number: 1,
@@ -12,12 +12,20 @@ const member_list = {
     },
     gjacobellis: {
       id: "gjacobellis",
-      img_src: "./public/gjacobellis.png",
+      img_src: "./images/member_images/gjacobellis.png",
       name: "Garrett A. Jacobellis",
       major: "Mechanical Engineering",
       number: 2,
       class: "2020",
       origin: "Huntington, NY",
+      catchphrase: "",
+    },
+    skaynor: {
+      id: "skaynor",
+      img_src: "./images/member_images/skaynor.png",
+      name: "Sam Kaynor",
+      major: "Computer Engineering",
+      class: "2022",
       catchphrase: "",
     },
     athierer: {
@@ -32,7 +40,7 @@ const member_list = {
     },
     dmccook: {
       id: "dmccook",
-      img_src: "./public/dmccook.png",
+      img_src: "./images/member_images/dmccook.png",
       name: "Dylan L. McCook",
       major: "Aerospace Engineering",
       number: 3,
@@ -42,7 +50,7 @@ const member_list = {
     },
     anoori: {
       id: "anoori",
-      img_src: "./public/anoori.png",
+      img_src: "./images/member_images/anoori.png",
       name: "Amanda Noori",
       major: "Aerospace Engineering",
       number: 4,
@@ -52,7 +60,7 @@ const member_list = {
     },
     dsouthwell: {
       id: "dsouthwell",
-      img_src: "./public/dsouthwell.png",
+      img_src: "./images/member_images/dsouthwell.png",
       name: "Donovan Southwell",
       major: "Aerospace Engineering",
       number: 5,
@@ -62,7 +70,7 @@ const member_list = {
     },
     msyed: {
       id: "msyed",
-      img_src: "./public/msyed.png",
+      img_src: "./images/member_images/msyed.png",
       name: "Muntaser Syed",
       major: "Computer Engineering",
       number: 6,
@@ -72,7 +80,7 @@ const member_list = {
     },
     athierer: {
       id: "athierer",
-      img_src: "./public/athierer.png",
+      img_src: "./images/member_images/athierer.png",
       name: "Alexander B. Thierer",
       major: "Civil Engineering",
       number: 7,
@@ -82,7 +90,7 @@ const member_list = {
     },
     athornton: {
       id: "athornton",
-      img_src: "./public/athornton.png",
+      img_src: "./images/member_images/athornton.png",
       name: "Alana Thornton",
       major: "Mechanical Engineering",
       number: 8,
@@ -92,7 +100,7 @@ const member_list = {
     },
     rwhitman: {
       id: "rwhitman",
-      img_src: "./public/rwhitman.png",
+      img_src: "./images/member_images/rwhitman.png",
       name: "Robert Whitman",
       major: "Computer Science",
       number: 9,
@@ -102,7 +110,7 @@ const member_list = {
     },
     fswarr: {
       id: "fswarr",
-      img_src: "./public/fswarr.png",
+      img_src: "./images/member_images/fswarr.png",
       name: "Fiona E. Swarr",
       major: "Mechanical Engineering",
       number: 10,
@@ -112,7 +120,7 @@ const member_list = {
     },
     sedwards: {
       id: "sedwards",
-      img_src: "./public/sedwards.png",
+      img_src: "./images/member_images/sedwards.png",
       name: "Sarah Edwards",
       major: "Aerospace Engineering",
       number: 11,
@@ -122,7 +130,7 @@ const member_list = {
     },
     crush: {
       id: "crush",
-      img_src: "./public/crush.png",
+      img_src: "./images/member_images/crush.png",
       name: "Cassandra Rush",
       major: "Aerospace Engineering",
       number: 12,
@@ -132,7 +140,7 @@ const member_list = {
     },
     ahopkins: {
       id: "ahopkins",
-      img_src: "./public/ahopkins.png",
+      img_src: "./images/member_images/ahopkins.png",
       name: "Alexis Hopkins",
       major: "Biomedical Engineering",
       number: 13,
@@ -142,7 +150,7 @@ const member_list = {
     },
     mtapaszto: {
       id: "mtapaszto",
-      img_src: "./public/mtapaszto.png",
+      img_src: "./images/member_images/mtapaszto.png",
       name: "Marcell Tapaszto",
       major: "Computer Engineering",
       number: 15,
@@ -152,7 +160,7 @@ const member_list = {
     },
     measton: {
       id: "measton",
-      img_src: "./public/measton.png",
+      img_src: "./images/member_images/measton.png",
       name: "Miranda Easton",
       major: "Aerospace Engineering",
       number: 16,
@@ -162,7 +170,7 @@ const member_list = {
     },
     rgriffin: {
       id: "rgriffin",
-      img_src: "./public/rgriffin.png",
+      img_src: "./images/member_images/rgriffin.png",
       name: "Ryley P. Griffin",
       major: "Chemical Engineering",
       number: 17,
@@ -172,7 +180,7 @@ const member_list = {
     },
     lblackwell: {
       id: "lblackwell",
-      img_src: "./public/lblackwell.png",
+      img_src: "./images/member_images/lblackwell.png",
       name: "Landon C. Blackwell-Frank",
       major: "Mechanical Engineering",
       number: 18,
@@ -182,7 +190,7 @@ const member_list = {
     },
     jhing: {
       id: "jhing",
-      img_src: "./public/jhing.png",
+      img_src: "./images/member_images/jhing.png",
       name: "Justing Hing",
       major: "Aerospace Engineering",
       number: 19,
@@ -192,7 +200,7 @@ const member_list = {
     },
     mhoadley: {
       id: "mhoadley",
-      img_src: "./public/mhoadley.png",
+      img_src: "./images/member_images/mhoadley.png",
       name: "Michael Hoadley",
       number: 20,
       major: "Mechanical Engineering",
@@ -202,7 +210,7 @@ const member_list = {
     },
     ileon: {
       id: "ileon",
-      img_src: "./public/ileon.png",
+      img_src: "./images/member_images/ileon.png",
       name: "Ian Leon",
       major: "Aerospace Engineering",
       number: 21,
@@ -211,7 +219,7 @@ const member_list = {
     },
     csisko: {
       id: "csisko",
-      img_src: "./public/csisko.png",
+      img_src: "./images/member_images/csisko.png",
       name: "Caroline Sisko",
       major: "Aerospace Engineering",
       number: 22,
@@ -221,7 +229,7 @@ const member_list = {
     },
     rhutchison: {
       id: "rhutchison",
-      img_src: "./public/rhutchinson.png",
+      img_src: "./images/member_images/rhutchinson.png",
       name: "Ryan Hutchison",
       major: "Aerospace Engineering",
       number: 23,
@@ -231,7 +239,7 @@ const member_list = {
     },
     dnieves: {
       id: "dnieves",
-      img_src: "./public/dnieves.png",
+      img_src: "./images/member_images/dnieves.png",
       name: "David Nieves Acarón",
       major: "Computer Engineering",
       number: 24,
@@ -241,7 +249,7 @@ const member_list = {
     },
     grivasleal: {
       id: "grivasleal",
-      img_src: "./public/grivasleal.png",
+      img_src: "./images/member_images/grivasleal.png",
       name: "Gerardo Rivas Leal",
       major: "Computer Engineering",
       number: 25,
@@ -251,7 +259,7 @@ const member_list = {
     },
     atisaranni: {
       id: "atisaranni",
-      img_src: "./public/atisaranni.png",
+      img_src: "./images/member_images/atisaranni.png",
       name: "Ashley L. Tisaranni",
       major: "Aerospace Engineering",
       number: 26,
@@ -261,7 +269,7 @@ const member_list = {
     },
     kdecker: {
       id: "kdecker",
-      img_src: "./public/kdecker.png",
+      img_src: "./images/member_images/kdecker.png",
       name: "Kayla N. Decker",
       major: "Aerospace Engineering",
       number: 27,
@@ -271,7 +279,7 @@ const member_list = {
     },
     kforero: {
       id: "kforero",
-      img_src: "./public/kforero.png",
+      img_src: "./images/member_images/kforero.png",
       name: "Kathleen Forero",
       major: "Chemical Engineering",
       number: 28,
@@ -282,7 +290,7 @@ const member_list = {
     },
     amichalczyk: {
       id: "amichalczyk",
-      img_src: "./public/kforero.png",
+      img_src: "./images/member_images/kforero.png",
       name: "Alaina M. Michalczyk",
       major: "Mechnical Engineering",
       number: 29,
@@ -293,7 +301,7 @@ const member_list = {
     },
     asullivan: {
       id: "asullivan",
-      img_src: "./public/asullivan.png",
+      img_src: "./images/member_images/asullivan.png",
       name: "Adli R. Sullivan",
       major: "Chemical Engineering",
       number: 30,
@@ -303,7 +311,7 @@ const member_list = {
     },
     swaddell: {
       id: "swaddell",
-      img_src: "./public/swaddell.png",
+      img_src: "./images/member_images/swaddell.png",
       name: "Shelton Waddell",
       major: "Aerospace Engineering",
       number: 31,
@@ -313,7 +321,7 @@ const member_list = {
     },
     rblomquist: {
       id: "rblomquist",
-      img_src: "./public/rblomquist.png",
+      img_src: "./images/member_images/rblomquist.png",
       name: "Regan Blomquist",
       major: "Biomedical Engineering",
       number: 32,
@@ -323,7 +331,7 @@ const member_list = {
     },
     gmarrero: {
       id: "gmarrero",
-      img_src: "./public/gmarrero.png",
+      img_src: "./images/member_images/gmarrero.png",
       name: "Jay Marrero",
       major: "Aerospace Engineering",
       number: 33,
@@ -333,7 +341,7 @@ const member_list = {
     },
     kmobley: {
       id: "kmobley",
-      img_src: "./public/kmobley.png",
+      img_src: "./images/member_images/kmobley.png",
       name: "Ken Mobley",
       major: "Aerospace Engineering",
       number: 34,
@@ -343,7 +351,7 @@ const member_list = {
     },
     tpaige: {
       id: "tpaige",
-      img_src: "./public/tpaige.png",
+      img_src: "./images/member_images/tpaige.png",
       name: "Trent Paige",
       major: "Aerospace Engineering",
       number: 35,
@@ -353,7 +361,7 @@ const member_list = {
     },
     cswords: {
       id: "cswords",
-      img_src: "./public/cswords.png",
+      img_src: "./images/member_images/cswords.png",
       name: "Carlie Swords",
       major: "Aerospace Engineering",
       number: 36,
@@ -363,7 +371,7 @@ const member_list = {
     },
     dbarnes: {
       id: "dbarnes",
-      img_src: "./public/dbarnes.png",
+      img_src: "./images/member_images/dbarnes.png",
       name: "Dylan Barnes",
       major: "Aerospace Engineering",
       number: 37,
@@ -373,7 +381,7 @@ const member_list = {
     },
     rhalcyon: {
       id: "rhalcyon",
-      img_src: "./public/rhalcyon.png",
+      img_src: "./images/member_images/rhalcyon.png",
       name: "Rosemary Halcyon-Schmitt",
       major: "Chemical Engineering",
       number: 38,
@@ -384,7 +392,7 @@ const member_list = {
 
     jjohnson: {
       id: "jjohnson",
-      img_src: "./public/jjohnson.png",
+      img_src: "./images/member_images/jjohnson.png",
       name: "Jordan Johnson",
       major: "Civil Engineering",
       number: 39,
@@ -395,7 +403,7 @@ const member_list = {
 
     ajunkin: {
       id: "ajunkin",
-      img_src: "./public/ajunkin.png",
+      img_src: "./images/member_images/ajunkin.png",
       name: "Andrew Junkin",
       major: "Biomedical Engineering",
       number: 40,
@@ -405,7 +413,7 @@ const member_list = {
     },
     mlanahan: {
       id: "mlanahan",
-      img_src: "./public/mlanahan.png",
+      img_src: "./images/member_images/mlanahan.png",
       name: "Madison Lanahan",
       major: "Computer Science ",
       number: 41,
@@ -415,7 +423,7 @@ const member_list = {
     },
     dmcdaniels: {
       id: "dmcdaniels",
-      img_src: "./public/dmcdaniels.png",
+      img_src: "./images/member_images/dmcdaniels.png",
       name: "Devlin McDaniels",
       major: "Aerospace Engineering",
       number: 42,
@@ -425,7 +433,7 @@ const member_list = {
     },
     vshirley: {
       id: "vshirley",
-      img_src: "./public/vshirley.png",
+      img_src: "./images/member_images/vshirley.png",
       name: "Val Shirley",
       major: "Aerospace Engineering",
       number: 43,
@@ -435,7 +443,7 @@ const member_list = {
     },
     kweaver: {
       id: "kweaver",
-      img_src: "./public/kweaver.png",
+      img_src: "./images/member_images/kweaver.png",
       name: "Keelin Weaver",
       major: "Aerospace Engineering",
       number: 44,
@@ -445,7 +453,7 @@ const member_list = {
     },
     czinninger: {
       id: "czinninger",
-      img_src: "./public/czinninger.png",
+      img_src: "./images/member_images/czinninger.png",
       name: "Charlotte Zinninger",
       major: "Aerospace Engineering",
       number: 45,
@@ -455,7 +463,7 @@ const member_list = {
     },
     oloris: {
       id: "oloris",
-      img_src: "./public/oloris.png",
+      img_src: "./images/member_images/oloris.png",
       name: "Olivia Loris",
       major: "Software Engineering",
       number: 46,
@@ -465,7 +473,7 @@ const member_list = {
     },
     gspitaletto: {
       id: "gspitaletto",
-      img_src: "./public/gspitaletto.png",
+      img_src: "./images/member_images/gspitaletto.png",
       name: "Genevieve Spitaletto",
       major: "Civil Engineering",
       number: 47,
@@ -475,7 +483,7 @@ const member_list = {
     },
     astringer: {
       id: "astringer",
-      img_src: "./public/astringer.png",
+      img_src: "./images/member_images/astringer.png",
       name: "Ashton Stringer",
       major: "Mechanical Engineering",
       number: 48,
@@ -485,7 +493,7 @@ const member_list = {
     },
     zhardin: {
       id: "zhardin",
-      img_src: "./public/zhardin.png",
+      img_src: "./images/member_images/zhardin.png",
       name: "Zachary Hardin",
       major: "Mechanical Engineering",
       number: 49,
@@ -495,7 +503,7 @@ const member_list = {
     },
     amoore: {
       id: "amoore",
-      img_src: "./public/amoore.png",
+      img_src: "./images/member_images/amoore.png",
       name: "Archer Moore",
       major: "Chemical Engineering",
       number: 50,
@@ -505,7 +513,7 @@ const member_list = {
     },
     gmorales: {
       id: "gmorales",
-      img_src: "./public/gmorales.png",
+      img_src: "./images/member_images/gmorales.png",
       name: "Gabriel Morales",
       major: "Software Engineering",
       number: 51,
@@ -542,6 +550,18 @@ const member_list = {
     { group: "edges", data: { source: "measton", target: "cswords" } },
     { group: "edges", data: { source: "ahopkins", target: "measton" } },
     { group: "edges", data: { source: "measton", target: "ileon" } },
+    { group: "edges", data: { source: "fswarr", target: "csisko" } },
+    { group: "edges", data: { source: "anoori", target: "fswarr" } },
+    { group: "edges", data: { source: "atisaranni", target: "kdecker" } },
+    { group: "edges", data: { source: "kdecker", target: "amoore" } },
+    { group: "edges", data: { source: "kdecker", target: "mlanahan" } },
+    { group: "edges", data: { source: "vshirley", target: "oloris" } },
+    { group: "edges", data: { source: "mtapaszto", target: "swaddell" } },
+    { group: "edges", data: { source: "ahopkins", target: "lblackwell" } },
+    { group: "edges", data: { source: "crush", target: "rhutchison" } },
+    { group: "edges", data: { source: "crush", target: "tpaige" } },
+    { group: "edges", data: { source: "skaynor", target: "asullivan" } },
+    // TODO: Add Garrett to Maddie, Maddie to Riley, then Garrett to Elizabeth, and Elizabeth to Sam
   ],
 };
 

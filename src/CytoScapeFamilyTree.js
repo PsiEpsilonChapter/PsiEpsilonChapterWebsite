@@ -26,6 +26,14 @@ class CytoScapeFamilyTree extends React.Component {
   style = null;
   layout = null;
   cy = null;
+  componentWillMount() {
+    var temp = this.importAll(
+      require.context("./images/member_images/", false, /\.(png)$/)
+    );
+
+    this.listOfImages = temp[0];
+    this.listOfImageSrcs = temp[1];
+  }
 
   componentDidMount() {
     var nodeElements = [];
@@ -69,7 +77,7 @@ class CytoScapeFamilyTree extends React.Component {
       {
         selector: "node",
         style: {
-          "background-image": "data(img)",
+          "background-image": "data(img_src)",
           width: 30,
           height: 30,
           label: "data(name)",
@@ -127,7 +135,7 @@ class CytoScapeFamilyTree extends React.Component {
       "border-color": "#000",
       "border-width": 3,
       label: "data(name)",
-      "background-image": "data(img_src)",
+      "background-image": PsiEps,
       "border-opacity": 0.5,
     });
 
@@ -166,10 +174,23 @@ class CytoScapeFamilyTree extends React.Component {
     for (const [key, value] of Object.entries(member_list["members"])) {
       var member_dict = value;
       member_dict["key"] = key;
+      console.log("List of images is ");
+      console.log(this.listOfImages);
       member_dict = { group: "nodes", data: member_dict };
       modded_members_list.push(member_dict);
       console.log("member is ");
       console.log(member_dict);
+      var image = this.listOfImages.filter((image) => {
+        console.log("Image is ");
+        console.log(image);
+        console.log("Key is ");
+        console.log(key);
+        if (image.includes(key)) {
+          return image;
+        }
+      });
+      console.log("Image match is ");
+      console.log(image);
       modded_members_list.push(member_dict);
     }
 
