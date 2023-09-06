@@ -3,6 +3,7 @@ import "react-photo-view/dist/react-photo-view.css";
 import { RViewer, RViewerTrigger } from "react-viewerjs";
 import React from "react";
 import GalleryImage from "./GalleryImage";
+import i18next from "./i18n";
 
 class Gallery extends React.Component {
   constructor(props) {
@@ -49,7 +50,7 @@ class Gallery extends React.Component {
     });
     return (
       <PhotoProvider>
-        <div>Click on the images to scroll through!</div>
+        <div>{i18next.t("gallery_click_prompt")}</div>
         <div className="gallery-list">{innerItems}</div>
       </PhotoProvider>
     );

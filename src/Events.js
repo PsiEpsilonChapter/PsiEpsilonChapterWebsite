@@ -1,5 +1,6 @@
 import { React, useState, useEffect } from "react";
 import exclamation from "./exclamation.png";
+import i18next from "./i18n";
 
 function Events() {
   const [data, setData] = useState(null);
@@ -33,11 +34,8 @@ function Events() {
           alt="Error"
         />
         <div className="error-content">
-          <div>Error</div>{" "}
-          <div>
-            Unable to fetch Discord Events information. Come back later or
-            contact someone from our contacts page.
-          </div>
+          <div>{i18next.t("events-error-title")}</div>{" "}
+          <div>{i18next.t("events-error-content")}</div>
         </div>
       </div>
     </div>
@@ -53,4 +51,3 @@ function Events() {
 }
 
 export default Events;
-

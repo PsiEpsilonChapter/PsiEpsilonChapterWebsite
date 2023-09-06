@@ -4,6 +4,7 @@ import instagram_logo from "./icons/instagram-logo.png";
 import facebook_logo from "./icons/facebook-logo.png";
 import discord_logo from "./icons/discord-logo.png";
 import GearUtils from "./Gears.jsx";
+import i18next from "./i18n";
 
 class Footer extends React.Component {
   render() {
@@ -15,15 +16,15 @@ class Footer extends React.Component {
         <div>
           <div>
             <div>
-              <div className="big">Contact</div>
+              <div className="big">{i18next.t("contact-title")}</div>
               <p> psiepsilonchapter@gmail.com </p>
             </div>
             <div>
-              <div className="big">Address</div>
+              <div className="big">{i18next.t("address-title")}</div>
               <p>150W. University Boulevard, 32901 Melbourne, FL </p>
             </div>
             <div>
-              <div className="big">Socials</div>
+              <div className="big">{i18next.t("socials-title")}</div>
               <div className="social-icons">
                 <img
                   src={instagram_logo}
@@ -45,7 +46,7 @@ class Footer extends React.Component {
             </div>
             <br />
             <div>
-              <div className="big">Credits</div>
+              <div className="big">{i18next.t("credits-title")}</div>
             </div>
           </div>
         </div>

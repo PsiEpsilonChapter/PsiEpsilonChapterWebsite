@@ -61,9 +61,10 @@ class CytoScapeFamilyTree extends React.Component {
     });
     for (var i = 0; i < this.elements.length; i++) {
       var element = this.elements[i];
+      var img = element["img_src"] !== "" ? element["img_src"] : PsiEps;
       this.stylesheet
         .selector(`${element.data.id}`)
-        .css({ "background-image": element["img_src"] });
+        .css({ "background-image": img });
     }
   }
 

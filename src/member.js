@@ -7,6 +7,7 @@ import civil_engineering_icon from "../src/major_images/civil-engineering.png";
 import chemical_engineering_icon from "../src/major_images/chemical-engineering.png";
 import bioengineering_icon from "../src/major_images/biomedical-engineering.png";
 import aerospace_engineering_icon from "../src/major_images/aerospace-engineering.png";
+import i18next from "./i18n";
 
 class Member extends React.Component {
   // lol this tutorial helped https://www.youtube.com/watch?v=taMJct5oeoI
@@ -33,7 +34,11 @@ class Member extends React.Component {
     var class_str = String(this.props.member.class);
     class_str = class_str.substr(2);
     if (class_str != undefined && class_str != "") {
-      var class_div = <div className="">Class of '{class_str}</div>;
+      var class_div = (
+        <div className="">
+          {i18next.t("class-of")} '{class_str}
+        </div>
+      );
     }
     var img_src = this.props.member.img_src;
     if (img_src == undefined) {
@@ -44,7 +49,7 @@ class Member extends React.Component {
         <img alt="member profile" src={img_src}></img>
         <div className="member-name">{this.props.member.name}</div>
         <div className="member-major">
-          {this.props.member.major}
+          {i18next.t(this.props.member.major)}
           <img src={major_icon} />
         </div>
         {class_div}

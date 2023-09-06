@@ -211,7 +211,7 @@ const member_list = {
     ileon: {
       id: "ileon",
       img_src: "./images/member_images/ileon.png",
-      name: "Ian Leon",
+      name: "Ian León",
       major: "Aerospace Engineering",
       number: 21,
       class: "2022",
@@ -521,6 +521,13 @@ const member_list = {
       origin: "North Carolina",
       catchphrase: "",
     },
+    elizabeth: {
+      id: "elizabeth",
+      img_src: "",
+      name: "Elizabeth",
+      major: "?",
+      catchphrase: "",
+    },
   },
   regents: {
     previous: {
@@ -564,6 +571,10 @@ const member_list = {
     { group: "edges", data: { source: "mtapaszto", target: "dbarnes" } },
     { group: "edges", data: { source: "ajunkin", target: "gspitaletto" } },
     { group: "edges", data: { source: "mhoadley", target: "ajunkin" } },
+    { group: "edges", data: { source: "rwhitman", target: "ahopkins" } },
+    { group: "edges", data: { source: "athornton", target: "crush" } },
+    { group: "edges", data: { source: "mtapaszto", target: "astringer" } },
+    { group: "edges", data: { source: "jhing", target: "vshirley" } },
     // TODO: Add Garrett to Maddie, Maddie to Riley, then Garrett to Elizabeth, and Elizabeth to Sam
   ],
 };

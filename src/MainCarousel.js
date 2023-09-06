@@ -6,20 +6,22 @@ import professionalism from "./homepage_imgs/everyone_professional_peter.jpg";
 import volunteering from "./homepage_imgs/everyone_cleanup_peter_adli_landon.png";
 import { useTransition, animated } from "react-spring";
 import GearUtils from "./Gears.jsx";
+import { useTranslation } from "react-i18next";
+import i18next from "./i18n";
 
 class MainCarousel extends React.Component {
   CarouselContent = {
     0: {
       image: volunteering,
-      slogan: "Volunteering",
+      slogan: i18next.t("volunteering-title"),
     },
     1: {
       image: professionalism,
-      slogan: "Professionalism",
+      slogan: i18next.t("professionalism-title"),
     },
     2: {
       image: brotherhood,
-      slogan: "Brotherhood",
+      slogan: i18next.t("brotherhood-title"),
     },
   };
 
@@ -119,8 +121,9 @@ class MainCarousel extends React.Component {
               </div>
 
               <div id="chapter-title" className="hor-flex">
+                {i18next.t("chapter-title-pre")}
                 <div className="chapter-letters">ΨΕ </div>
-                <div>Chapter</div>
+                <div>{i18next.t("chapter-title-post")}</div>
               </div>
               <div id="CarouselSlogan" className="carousel-slogan">
                 {this.CarouselContent[this.state.current_showing].slogan}

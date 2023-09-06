@@ -1,4 +1,5 @@
 import React from "react";
+import i18next from "./i18n";
 
 class Regent extends React.Component {
   // lol this tutorial helped https://www.youtube.com/watch?v=taMJct5oeoI
@@ -6,7 +7,11 @@ class Regent extends React.Component {
     var class_str = String(this.props.member.class);
     class_str = class_str.substr(2);
     if (class_str != undefined && class_str != "") {
-      var class_div = <div className="">Class of '{class_str}</div>;
+      var class_div = (
+        <div className="">
+          {i18next.t("class-of")} '{class_str}
+        </div>
+      );
     }
     var img_src = this.props.member.img_src;
     if (img_src == undefined) {

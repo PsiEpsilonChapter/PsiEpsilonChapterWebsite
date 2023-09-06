@@ -6,6 +6,7 @@ import home_icon from "./icons/home.png";
 import mission_icon from "./icons/mission.png";
 import members_icon from "./icons/members.png";
 import silly_icon from "./icons/silly.png";
+import i18next from "./i18n";
 
 class HeaderCollection extends React.Component {
   render() {
@@ -18,7 +19,7 @@ class HeaderCollection extends React.Component {
           }}
         >
           <img src={home_icon} />
-          Home
+          {i18next.t("home-title")}
         </div>
         <div
           onClick={() => {
@@ -26,7 +27,8 @@ class HeaderCollection extends React.Component {
             this.props.toggleModal();
           }}
         >
-          <img id="members-icon" src={members_icon} /> Members{" "}
+          <img id="members-icon" src={members_icon} />{" "}
+          {i18next.t("members-title")}
         </div>
         <div
           onClick={() => {
@@ -34,7 +36,7 @@ class HeaderCollection extends React.Component {
             this.props.toggleModal();
           }}
         >
-          <img src={history_icon} /> History{" "}
+          <img src={history_icon} /> {i18next.t("history-title")}
         </div>
 
         <div
@@ -43,7 +45,7 @@ class HeaderCollection extends React.Component {
             this.props.toggleModal();
           }}
         >
-          <img src={gallery_icon} /> Gallery{" "}
+          <img src={gallery_icon} /> {i18next.t("gallery-title")}
         </div>
         <div
           onClick={() => {
@@ -52,7 +54,7 @@ class HeaderCollection extends React.Component {
           }}
         >
           <img src={mission_icon} />
-          Join Us
+          {i18next.t("join-us-title")}
         </div>
         <div
           onClick={() => {
@@ -61,7 +63,7 @@ class HeaderCollection extends React.Component {
           }}
         >
           <img src={mission_icon} />
-          Events
+          {i18next.t("events-title")}
         </div>
         <div
           onClick={() => {
@@ -70,7 +72,7 @@ class HeaderCollection extends React.Component {
           }}
         >
           <img src={silly_icon} style={{ height: "4vh", width: "auto" }} />{" "}
-          Silly{" "}
+          {i18next.t("silly-title")}
         </div>
         <div>🇺🇸 EN</div>
       </div>

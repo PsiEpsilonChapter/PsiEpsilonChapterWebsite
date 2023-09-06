@@ -3,6 +3,7 @@ import member_list from "./member_list";
 import Member from "./member";
 import PsiEpsilonImageGray from "../src/PsiEpsProfileGray.png";
 import Footer from "./Footer";
+import i18next from "./i18n";
 
 class Members extends React.Component {
   importAll(r) {
@@ -48,6 +49,7 @@ class Members extends React.Component {
         console.log("img_src_ind is positive ");
         replacementImage = this.listOfImages[img_src_ind];
       }
+      replace.major = i18next.t(replace.major);
       replace.img_src = replacementImage;
       // if (modded_src == value["img_src"]) {
       // replace.img_src = PsiEpsilonImageGray;
