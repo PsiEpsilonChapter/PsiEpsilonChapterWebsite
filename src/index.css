@@ -78,6 +78,116 @@ code {
 	width: 8vw;
 }
 
+#lang-change {
+	border-bottom: none;
+	background-color: rgb(0,0,0,0.3);
+	color: white;
+	padding: 0.3vw;
+	border-radius: 0.9vw;
+}
+
+#lang-chage:hover {
+	border-bottom: none;
+	
+}
+
+#lang-change:hover div{
+	border-bottom: none;
+}
+
+
+
+/* Imagine a dropdown menu for selecting languages */
+.language-wrapper {
+	position: relative;
+}
+.language-select:hover {
+	cursor: pointer;
+}
+.language-wrapper > div {
+	display: none;
+} 	
+
+.language-wrapper > div:first-child {
+	display: block;
+}
+
+.language-wrapper:hover > div{
+	position: absolute;
+	display: block;
+	border-bottom: none;
+}
+
+.language-wrapper div:first-child {
+	position: relative;
+	display: block;
+}
+
+.language-wrapper:hover {
+	border-bottom: none;
+}
+
+.language-select {
+position: absolute;
+display: none;
+cursor: pointer;
+}
+
+.language-select > div {
+	top: 100%;
+display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition: 0.5s;
+  border: 1px solid #ccc;
+}
+
+.language-select > div:first-child {
+	display: block;
+
+}
+
+
+.language-select:hover > div {
+  display: block;
+	border: none;
+}
+
+.language-select div div {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.language-select div div:hover {
+  background-color: #ddd;
+}
+
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.language-select:hover > div {
+  animation: slideIn 0.3s forwards;
+}
+
+
+
+
+
+
 .header-bar {
 		z-index: 15;
 	background-color: white;

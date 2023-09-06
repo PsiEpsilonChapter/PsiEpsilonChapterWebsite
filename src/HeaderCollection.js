@@ -8,8 +8,32 @@ import members_icon from "./icons/members.png";
 import silly_icon from "./icons/silly.png";
 import i18next from "./i18n";
 
+var languageEmojiMaps = {
+  en: "🇺🇸",
+  es: "🇪🇸",
+};
+
 class HeaderCollection extends React.Component {
   render() {
+    var languageDivs = [];
+    for (var i = 0; i < i18next.languages.length; i++) {
+      var orig_lang = i18next.languages[i];
+      var language = languageEmojiMaps[orig_lang]
+        ? languageEmojiMaps[orig_lang]
+        : orig_lang;
+      language += i18next.languages[i];
+      languageDivs.push(
+        <div
+          key={language}
+          onClick={() => {
+            console.log("changing language to " + orig_lang);
+            i18next.changeLanguage(orig_lang);
+          }}
+        >
+          {language}
+        </div>
+      );
+    }
     return (
       <div id="header-collection" className="header-bar">
         <div
@@ -74,7 +98,9 @@ class HeaderCollection extends React.Component {
           <img src={silly_icon} style={{ height: "4vh", width: "auto" }} />{" "}
           {i18next.t("silly-title")}
         </div>
-        <div>🇺🇸 EN</div>
+        <div id="lang-change" className="language-wrapper">
+          {languageDivs}
+        </div>
       </div>
     );
   }
