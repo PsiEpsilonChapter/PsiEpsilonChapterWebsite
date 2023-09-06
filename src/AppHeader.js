@@ -10,6 +10,7 @@ class AppHeader extends React.Component {
     this.headerCollection = (
       <HeaderCollection
         setPage={props.setPage}
+        setLanguage={props.setLanguage}
         toggleModal={() => {
           console.log("no modal since it is not on mobile!");
         }}
@@ -17,8 +18,8 @@ class AppHeader extends React.Component {
     );
   }
   render() {
-    console.log("AppPagesEnum is ");
-    console.log(AppPagesEnum);
+    // console.log("AppPagesEnum is ");
+    // console.log(AppPagesEnum);
 
     return (
       <div className="HeaderWrapper">

@@ -14,8 +14,13 @@ var languageEmojiMaps = {
 };
 
 class HeaderCollection extends React.Component {
+  constuctor(props) {
+    this.props = props;
+  }
   render() {
     var languageDivs = [];
+    console.log("Languages are ");
+    console.log(i18next.resources);
     for (var i = 0; i < i18next.languages.length; i++) {
       var orig_lang = i18next.languages[i];
       var language = languageEmojiMaps[orig_lang]
@@ -27,7 +32,8 @@ class HeaderCollection extends React.Component {
           key={language}
           onClick={() => {
             console.log("changing language to " + orig_lang);
-            i18next.changeLanguage(orig_lang);
+            this.props.setLanguage(orig_lang);
+            this.setState({ language: orig_lang });
           }}
         >
           {language}

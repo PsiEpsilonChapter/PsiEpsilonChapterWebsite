@@ -7,6 +7,7 @@
 	--footer-gear-color: #4f4f4f;
 	--header-underline-color: #9A2A2A;
 	--polaroid-width: 15vw;
+	--lang-change-margin-top: 1vw;
 }
 
 @font-face {
@@ -82,8 +83,9 @@ code {
 	border-bottom: none;
 	background-color: rgb(0,0,0,0.3);
 	color: white;
-	padding: 0.3vw;
+/* padding: 0.3vw; */
 	border-radius: 0.9vw;
+	margin-top: var(--lang-change-margin-top);
 }
 
 #lang-chage:hover {
@@ -93,6 +95,7 @@ code {
 
 #lang-change:hover div{
 	border-bottom: none;
+	width: 80%;
 }
 
 
@@ -100,22 +103,58 @@ code {
 /* Imagine a dropdown menu for selecting languages */
 .language-wrapper {
 	position: relative;
+	width: 5vw;
+	padding: 0.5vw;
 }
 .language-select:hover {
 	cursor: pointer;
 }
 .language-wrapper > div {
-	display: none;
+/* display: none; */
+	position: absolute;
+	display: block;
+opacity: 0;
+width: 100%;
 } 	
 
 .language-wrapper > div:first-child {
 	display: block;
+opacity: 1;
+}
+
+.language-wrapper:hover {
+	height: 5vw;
+	display: block;
+	top: var(--lang-change-margin-top);
 }
 
 .language-wrapper:hover > div{
 	position: absolute;
-	display: block;
+/* display: block; */
 	border-bottom: none;
+opacity: 1;
+animation: slideIn 0.3s forwards;
+}
+
+.language-wrapper:hover > div:first-child {
+	animation: none;
+}
+.language-wrapper:hover > div:hover {
+background-color: rgb(255,255,255,0.4);
+border-radius: 		0.9vw;
+
+}
+
+@keyframes
+slideIn {
+	from {
+		transform: translateY(-20px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
 }
 
 .language-wrapper div:first-child {

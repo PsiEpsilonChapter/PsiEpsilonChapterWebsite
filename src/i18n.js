@@ -16,8 +16,8 @@ i18n
   .use(initReactI18next) // binds react-i18next to the core
   .init({
     resources,
-    lng: "es",
-    fallbackLng: "en",
+    lng: "en",
+    fallbackLng: ["en", "es"],
     debug: true,
     interpolation: {
       escapeValue: false,

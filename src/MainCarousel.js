@@ -10,7 +10,7 @@ import { useTranslation } from "react-i18next";
 import i18next from "./i18n";
 
 class MainCarousel extends React.Component {
-  CarouselContent = {
+  CarouselContent = () => ({
     0: {
       image: volunteering,
       slogan: i18next.t("volunteering-title"),
@@ -23,16 +23,21 @@ class MainCarousel extends React.Component {
       image: brotherhood,
       slogan: i18next.t("brotherhood-title"),
     },
-  };
+  });
 
   constructor(props) {
     super(props);
     this.state = {
       current_showing: 0,
       inProp: true,
+      language: i18next.language,
     };
     this.current_showing = 0;
   }
+
+  setLanguage = (language) => {
+    this.setState({ language: language });
+  };
 
   toggle = () => {
     this.setState((prevState) => ({
@@ -51,8 +56,8 @@ class MainCarousel extends React.Component {
     setTimeout(() => {
       console.log(" this.current_showing is ");
       console.log(this.current_showing);
-      console.log(this.CarouselContent[this.state.current_showing]);
-      console.log(this.CarouselContent[this.state.current_showing].image);
+      console.log(this.CarouselContent()[this.state.current_showing]);
+      console.log(this.CarouselContent()[this.state.current_showing].image);
       var next_showing = (this.state.current_showing + 1) % 3;
       console.log("next_showing is " + next_showing);
 
@@ -64,7 +69,7 @@ class MainCarousel extends React.Component {
     console.log("Rerendering with value of ", this.state.current_showing);
     console.log(
       "Image is ",
-      this.CarouselContent[this.state.current_showing].image
+      this.CarouselContent()[this.state.current_showing].image
     );
     console.log("InProp is ", this.state.inProp);
     // this.timeout();
@@ -81,7 +86,7 @@ class MainCarousel extends React.Component {
             <div
               id="background1"
               style={{
-                backgroundImage: `url(${this.CarouselContent[0].image})`,
+                backgroundImage: `url(${this.CarouselContent()[0].image})`,
               }}
             ></div>
           </CSSTransition>
@@ -95,7 +100,7 @@ class MainCarousel extends React.Component {
             <div
               id="background2"
               style={{
-                backgroundImage: `url(${this.CarouselContent[1].image})`,
+                backgroundImage: `url(${this.CarouselContent()[1].image})`,
               }}
             ></div>
           </CSSTransition>
@@ -109,7 +114,7 @@ class MainCarousel extends React.Component {
             <div
               id="background3"
               style={{
-                backgroundImage: `url(${this.CarouselContent[2].image})`,
+                backgroundImage: `url(${this.CarouselContent()[2].image})`,
               }}
             ></div>
           </CSSTransition>
@@ -126,7 +131,7 @@ class MainCarousel extends React.Component {
                 <div>{i18next.t("chapter-title-post")}</div>
               </div>
               <div id="CarouselSlogan" className="carousel-slogan">
-                {this.CarouselContent[this.state.current_showing].slogan}
+                {this.CarouselContent()[this.state.current_showing].slogan}
               </div>
 
               <div className="centered icon"></div>

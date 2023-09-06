@@ -28,9 +28,9 @@ class Gallery extends React.Component {
   }
 
   randomRotation() {
-    console.log("Random rotation is being called");
+    // console.log("Random rotation is being called");
     let rotation = Math.floor(Math.random() * 6) - 1;
-    console.log(`Rotation: ${rotation}`);
+    // console.log(`Rotation: ${rotation}`);
     return rotation;
   }
 

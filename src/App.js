@@ -11,6 +11,7 @@ import History from "./history.js";
 import MobileAppHeader from "./MobileAppHeader";
 import JoinUs from "./JoinUs";
 import Events from "./Events";
+import i18next from "./i18n";
 
 // import "./App.css";
 
@@ -49,6 +50,18 @@ class App extends React.Component {
     console.log(`Current state is ${this.state.currentPage}`);
   };
 
+  setLanguage = (language) => {
+    console.log("setLanguage called with language " + language);
+    i18next.changeLanguage(language);
+    this.setState({
+      currentPage: this.state.currentPage,
+      previousPage: this.state.previousPage,
+      showModal: this.state.showModal,
+      isMobile: this.state.isMobile,
+      language: language,
+    });
+  };
+
   componentDidMount() {
     this.setState({
       currentPage: this.state.page,
@@ -67,7 +80,9 @@ class App extends React.Component {
     console.log(`Current state is ${this.state.currentPage}`);
   }
 
-  appHeader = (<AppHeader setPage={this.setPage} />);
+  appHeader = (
+    <AppHeader setPage={this.setPage} setLanguage={this.setLanguage} />
+  );
   openModal = () => {
     console.log("openModal called");
   };
@@ -92,7 +107,11 @@ class App extends React.Component {
       isMobile = true;
       console.log("isMobile is true");
       this.appHeader = (
-        <MobileAppHeader setPage={this.setPage} openModal={this.openModal} />
+        <MobileAppHeader
+          setPage={this.setPage}
+          openModal={this.openModal}
+          setLanguage={this.setLanguage}
+        />
       );
     }
     if (this.state.openModal) {
