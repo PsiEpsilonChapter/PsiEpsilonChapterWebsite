@@ -118,7 +118,7 @@ class MainCarousel extends React.Component {
               }}
             ></div>
           </CSSTransition>
-          <div>
+          <div className="carousel-title-wrapper">
             <div id="page-title" className="centered fade-in-bottom">
               <div className="theta-tau-title">
                 <div className="theta-title"> Θ </div>

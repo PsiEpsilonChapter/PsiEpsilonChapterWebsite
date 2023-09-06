@@ -169,6 +169,7 @@ class App extends React.Component {
         {this.backdrop}
         {this.appHeader}
         <Members />
+        <Footer />
       </div>
     );
   }

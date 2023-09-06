@@ -25,7 +25,7 @@ class History extends React.Component {
     var current_regent_entry = <Regent member={current_regent} />;
     return (
       <div className="HistorySummary">
-        <h1> Summary </h1>
+        <h1>{i18next.t("history-summary-title")}</h1>
         <p>{i18next.t("history-summary-point-1")}</p>
 
         <p>{i18next.t("history-summary-point-2")}</p>
