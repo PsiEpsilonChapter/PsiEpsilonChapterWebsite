@@ -180,15 +180,14 @@ function Events() {
     fetch("https://bots.hman.io/fitthetatauevents/json")
       .then((response) => {
         if (!response.ok) {
-          // throw new Error("Network response was not ok");
-          // this.setData(this.fakeEvents);
-        } else {
-          // this.setData(response.data);
+          this.setData(this.fakeEvents);
+          throw new Error("Network response was not ok");
         }
         return response.json();
       })
       .then((data) => {
-        setData(data);
+        // setData(data);
+        this.setData(this.fakeEvents);
         setLoading(false);
       })
       .catch((error) => {

@@ -41,7 +41,7 @@ class MainCarousel extends React.Component {
 
   toggle = () => {
     this.setState((prevState) => ({
-      inProp: !prevState.inProp,
+      current_showing: (prevState.current_showing + 1) % 3,
     }));
   };
 
@@ -49,7 +49,7 @@ class MainCarousel extends React.Component {
     // set a timer for 3 seconds to change properties of carousel-container
     console.log("componentDidMount is being called");
     console.log("Timing out for 3 seconds");
-    // this.timeout();
+    this.timeout();
   }
 
   timeout = () =>
@@ -63,6 +63,16 @@ class MainCarousel extends React.Component {
 
       this.setState({ current_showing: next_showing, inProp: false });
     }, 3000);
+
+  isBrotherhood = () => {
+    return this.state.current_showing === 2;
+  };
+  isProfessionalism = () => {
+    return this.state.current_showing === 1;
+  };
+  isVolunteering = () => {
+    return this.state.current_showing === 0;
+  };
 
   render() {
     var gears = GearUtils.getGearsMainCarousel();
@@ -78,49 +88,67 @@ class MainCarousel extends React.Component {
       <div>
         <div id="carousel-container" className="centered">
           <CSSTransition
-            in={this.state.inProp}
+            in={this.isVolunteering()}
             timeout={2000}
             classNames="carousel"
-            onEntered={this.toggle}
+            onEntered={this.timeout}
           >
             <div
-              id="background1"
+              id="backgroundVolunteering"
               style={{
                 backgroundImage: `url(${this.CarouselContent()[0].image})`,
+                "z-index": () => {
+                  return this.isVolunteering() ? 5 : 0;
+                },
+                opacity: () => {
+                  return this.isVolunteering() ? 1 : 0;
+                },
               }}
             ></div>
           </CSSTransition>
 
           <CSSTransition
-            in={this.state.inProp}
+            in={this.isProfessionalism()}
             timeout={2000}
             classNames="carousel"
-            onEntered={this.toggle}
+            onEntered={this.timeout}
           >
             <div
-              id="background2"
+              id="backgroundProfessionalism"
               style={{
                 backgroundImage: `url(${this.CarouselContent()[1].image})`,
+                "z-index": () => {
+                  return this.isProfessionalism() ? 5 : 0;
+                },
+                opacity: () => {
+                  return this.isProfessionalism() ? 1 : 0;
+                },
               }}
             ></div>
           </CSSTransition>
 
           <CSSTransition
-            in={this.state.inProp}
+            in={this.isBrotherhood()}
             timeout={2000}
             classNames="carousel"
-            onEntered={this.toggle}
+            onEntered={this.timeout}
           >
             <div
-              id="background3"
+              id="backgroundBrotherhood"
               style={{
                 backgroundImage: `url(${this.CarouselContent()[2].image})`,
+                "z-index": () => {
+                  return this.isBrotherhood() ? 5 : 0;
+                },
+                opacity: () => {
+                  return this.isBrotherhood() ? 1 : 0;
+                },
               }}
             ></div>
           </CSSTransition>
           <div className="carousel-title-wrapper">
             <div id="page-title" className="centered fade-in-bottom">
-              <div className="theta-tau-title">
+              <div className="theta-tau-title white-outline">
                 <div className="theta-title"> Θ </div>
                 <div className="tau-title">Τ</div>
               </div>

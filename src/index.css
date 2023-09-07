@@ -11,6 +11,9 @@
 	--carousel-height: 40vw;
 }
 
+
+.white-outline {
+}
 @font-face {
 	font-family: 'GirlySunrise';
 	src: local('GirlySunrise') url('./fonts/GirlySunrise-8M9ln.ttf') format('truetype');
@@ -411,7 +414,7 @@ padding: 10%;
 }
 
 #chapter-title {
-	text-shadow: 0 0 25px #000000;
+	text-shadow: 0 0 1.2vw #000000;
 	color: white;
 }
 
@@ -525,15 +528,15 @@ padding: 10%;
 	width: 100vw;
 }
 
-#background1 {
+#backgroundVolunteering {
 	z-index: 0;
 }
 
-#background2 {
+#backgroundProfessionalism {
 	z-index: 1;
 }
 
-#background3 {
+#backgroundBrotherhood {
 	z-index: 2;
 }
 
@@ -753,7 +756,7 @@ padding: 10%;
 }
 
 .carousel-slogan {
-	text-shadow: 0 0 25px white;
+	text-shadow: 0 0 1.2vw #000000;
 }
 
 .under-construction {
@@ -920,10 +923,16 @@ opacity: 1;
 }
 
 .carousel-exit {
-opacity: 1;
+opacity: 0;
   transition: all 1s ease-in;
 }
 
+.carousel-exit-done{
+opacity: 0;
+  transition: all 1s ease-in;
+}
+
+/* Without this the website's backgrounds will not transition... */
 .carousel-exit-active {
 opacity: 0;
   transition: all 1s ease-out;
