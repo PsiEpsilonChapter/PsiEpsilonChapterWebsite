@@ -529,7 +529,7 @@ padding: 10%;
 }
 
 #backgroundVolunteering {
-	z-index: 0;
+	z-index: 2;
 }
 
 #backgroundProfessionalism {
@@ -537,7 +537,7 @@ padding: 10%;
 }
 
 #backgroundBrotherhood {
-	z-index: 2;
+	z-index: 0;
 }
 
 
