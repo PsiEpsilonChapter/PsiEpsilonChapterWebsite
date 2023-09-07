@@ -1,6 +1,7 @@
 import { React, useState, useEffect } from "react";
 import exclamation from "./exclamation.png";
 import i18next from "./i18n";
+import Event from "./Event";
 
 function Events() {
   const fakeEvents = [
@@ -172,7 +173,7 @@ function Events() {
       },
     },
   ];
-  const [data, setData] = useState(null);
+  const [data, setData] = useState(fakeEvents);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -180,45 +181,55 @@ function Events() {
     fetch("https://bots.hman.io/fitthetatauevents/json")
       .then((response) => {
         if (!response.ok) {
-          this.setData(this.fakeEvents);
+          setData(fakeEvents);
           throw new Error("Network response was not ok");
         }
         return response.json();
       })
       .then((data) => {
-        // setData(data);
-        this.setData(this.fakeEvents);
+        setData(data || fakeEvents);
         setLoading(false);
       })
       .catch((error) => {
         setError(error);
+        if (!data) {
+          // If data hasn't already been set
+          setData(fakeEvents);
+        }
         setLoading(false);
       });
   }, []);
-
-  var errorPage = (
-    <div className="Events">
-      <div className="EventsError">
-        <img
-          style={{ width: "7vw", height: "7vw" }}
-          src={exclamation}
-          alt="Error"
-        />
-        <div className="error-content">
-          <div>{i18next.t("events-error-title")}</div>{" "}
-          <div>{i18next.t("events-error-content")}</div>
-        </div>
+  console.log(data);
+  console.log(data.length);
+  var eventDivs = [];
+  for (var i = 0; i < data.length; i++) {
+    var event = data[i];
+    console.log(event);
+    eventDivs.push(<Event event={event} />);
+  }
+  var eventsError = (
+    <div className="EventsError">
+      <img
+        style={{ width: "7vw", height: "7vw" }}
+        src={exclamation}
+        alt="Error"
+      />
+      <div className="error-content">
+        <div>{i18next.t("events-error-title")}</div>{" "}
+        <div>{i18next.t("events-error-content")}</div>
       </div>
     </div>
   );
-  for (var i = 0; i < data.length; i++) {}
+
+  // for (var i = 0; i < data.length; i++) {}
 
   var dataReturn = <div>{/* Render your data here */}</div>;
 
   return (
-    <div>
+    <div className="Events">
       {loading && <div>Loading...</div>}
-      {error && errorPage}
+      {error && eventsError}
+      {!loading && data && eventDivs}
       {!loading && !error && data && dataReturn}
     </div>
   );

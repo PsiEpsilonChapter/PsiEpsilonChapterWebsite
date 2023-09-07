@@ -756,6 +756,7 @@ padding: 10%;
 }
 
 .carousel-slogan {
+	color: white;
 	text-shadow: 0 0 1.2vw #000000;
 }
 
@@ -867,9 +868,57 @@ padding: 10%;
 .Events {
 	width: 100%;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
 	justify-items: center;
 	justify-content: center;
+}
+
+.eventDate {
+	font-size: 1.7vw;
+	margin-bottom: 4vw;
+}
+
+.Event {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 60%;
+	height: 100%;
+	background-color: #000000;
+	border-radius: 1vw;
+	margin-bottom: 5vw;
+	padding: 4vw;
+}
+
+.event-location {
+	font-size: 1.3vw;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-self: flex-start;
+	justify-self: flex-start;
+	width: 20%;
+	word-wrap: break-word;
+}
+
+.event-content {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+	word-wrap: break-word;
+}
+.event-desc-and-date {
+	width: 70%;
+	margin-left: 5%;
+	word-wrap: break-word;
+
 }
 
 .greeting-picture {
@@ -911,6 +960,7 @@ padding: 10%;
 	height: 100%;
 
 }
+
 
 .carousel-enter {
 opacity: 0;
